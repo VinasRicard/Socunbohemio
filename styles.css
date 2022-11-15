@@ -1,0 +1,215 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Merriweather&display=swap');
+
+/* General */
+.page {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+.columns {
+    display: flex;
+    height: fit-content;
+    margin: auto;
+}
+.column2 {
+    width: 50%;
+}
+.main_img {
+    width: 200px;
+}
+p {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
+
+.subtitle {
+    font-family: 'Karla', sans-serif;
+    color: #305B2C;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+/* Menu */
+.menu {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 0px;
+    display: flex;
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+    margin-left: 20px;
+    font-size: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    margin: auto;
+    color: black;
+}
+
+.menu_tab {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Karla', sans-serif;
+    margin: auto;
+    color: black;
+}
+
+.menu_tab:hover {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Karla', sans-serif;
+    margin: auto;
+    color: #305B2C;
+}
+
+/* Inici */
+.home {
+    width: 100%;
+    background-image: url('res/home.jpg');
+    background-size: 100%;
+}
+
+.add_container {
+    width: 95%;
+    height: 80%;
+    position: absolute;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.add {
+    background-color: #305B2C;
+    background: rgba(2, 104, 48, 0.5);
+    position: absolute;
+    bottom: 0px;
+    margin-left: 70px;
+    margin-bottom: 70px;
+    padding: 30px;
+    padding-right: 80px;
+    text-decoration: none;
+}
+
+.add:hover {
+    background: rgba(0, 53, 24, 0.5);
+}
+
+.add_title {
+    size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.add_subtitle {
+    size: 40px;
+    color: white;
+}
+
+/* Sobr el projecte */
+#sobreelprojecte_c {
+    width: 80%;
+}
+
+/* Concerts */
+.concerts {
+    width: fit-content;
+    margin: auto;
+}
+
+.month {
+    font-family: 'Karla', sans-serif;
+    color: #305B2C;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.date {
+    margin-right: 20px;
+}
+
+.concert_name {
+    margin-right: 20px;
+}
+
+.buy_tickets {
+    font-weight: bold;
+    color: #86C66F;
+    text-decoration: none;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+.sold_out {
+    font-weight: bold;
+    color: #FF7C76;
+}
+
+.free {
+    font-weight: bold;
+    color: #F3CA3E;
+}
+
+/* Lletres */
+.album_container {
+    width: 100%;
+}
+
+.album_title {
+    font-family: 'Karla', sans-serif;
+    color: #305B2C;
+    margin-bottom: 25px;
+    font-size: 22px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.song {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#lletres {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.pdfimage {
+    height: 30px;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pdftxt {
+    margin: auto;
+}
+
+/* Contacte */
+#contacte {
+    width: fit-content;
+}
+
+.contactTtl {
+    font-weight: bold;
+    color: #305B2C;
+    margin-right: 10px;
+}
+
+.contactTxt {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    color: black;
+    margin: auto;
+}
