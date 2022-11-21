@@ -22,10 +22,9 @@
 body {
     background-color: #FEFEF6;
 }
-
 .page {
     width: 100%;
-    height: 100%;
+    height: 90%;
     margin-top: 10%;
 }
 .columns {
@@ -43,7 +42,6 @@ p {
     font-family: 'AlteHaasGroteskRegular', 'Karla', sans-serif;
     font-size: 20px;
 }
-
 .subtitle {
     font-family: 'AlteHaasGroteskBold','Karla', sans-serif;
     color: #305B2C;
@@ -57,7 +55,6 @@ p {
     width: fit-content;
     margin: auto;
 }
-
 .bottom_container {
     width: 95%;
     height: 90%;
@@ -65,13 +62,11 @@ p {
     margin: auto;
     margin-top: 10%;
 }
-
 .bottom {
     position: absolute;
     bottom: 0px;
     width: 100%;
 }
-
 .instagrambtn {
     margin-left: 10px;
     margin-right: 10px;
@@ -138,7 +133,6 @@ p {
     left: 0px;
     display: flex;
 }
-
 .title {
     font-family: 'Karla', 'Merriweather', serif;
     margin-left: 20px;
@@ -149,7 +143,6 @@ p {
     color: #E8302A;
     font-weight: bold;
 }
-
 .menu_tab {
     text-decoration: none;
     font-size: 32px;
@@ -158,7 +151,6 @@ p {
     color: #E8302A;
     font-weight: bold;
 }
-
 .menu_tab_home {
     text-decoration: none;
     font-size: 32px;
@@ -167,17 +159,14 @@ p {
     color: #E8302A;
     font-weight: bold;
 }
-
 .menu_tab:hover {
     margin: auto;
     color: black;
 }
-
 .menu_tab_home:hover {
     margin: auto;
     color: white;
 }
-
 
 /* Inici */
 .home {
@@ -185,7 +174,6 @@ p {
     background-image: url('../res/home_bkg.jpg');
     background-size: 100%;
 }
-
 .add_container {
     width: 100%;
     height: 80%;
@@ -193,7 +181,6 @@ p {
     margin: auto;
     margin-top: 10%;
 }
-
 .add {
     position: absolute;
     bottom: 0px;
@@ -203,7 +190,6 @@ p {
     text-decoration: none;
     width: 95%;;
 }
-
 .add_title {
     size: 50px;
     color: white;
@@ -212,11 +198,9 @@ p {
     margin: auto;
     text-align: center;
 }
-
 .add_title:hover {
     color: #E8302A;
 }
-
 .add_subtitle {
     size: 40px;
     color: white;
@@ -231,8 +215,14 @@ p {
 }
 .sobrelprojecteinfo {
     height: fit-content;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 50px;
+    float: left;
+}
+#imatge_proj {
+    width: 38%;
+    object-fit:scale-down;
+    float: right;
 }
 
 /* Concerts */
@@ -240,15 +230,12 @@ p {
     width: fit-content;
     margin: auto;
 }
-
 .date {
     margin-right: 20px;
 }
-
 .concert_name {
     margin-right: 20px;
 }
-
 .buy_tickets {
     font-weight: bold;
     color: black;
@@ -257,13 +244,11 @@ p {
     font-size: 20px;
     font-family: 'AlteHaasGroteskRegular', 'Karla', sans-serif;
 }
-
 .sold_out {
     font-weight: bold;
     color: black;
     opacity: 50%;
 }
-
 .free {
     font-weight: bold;
     color: black;
@@ -273,7 +258,6 @@ p {
 .album_container {
     width: 100%;
 }
-
 .album_title {
     font-family: 'Karla', sans-serif;
     color: #305B2C;
@@ -282,27 +266,23 @@ p {
     margin-top: 50px;
     width: 100%;
 }
-
 .song {
     display: flex;
     height: fit-content;
     width: 100%;
     padding-left: 10px;
 }
-
 #lletres {
     width: 80%;
     margin: auto;
     margin-top: 10%;
 }
-
 .pdfimage {
     height: 30px;
     margin-right: 20px;
     margin-top: auto;
     margin-bottom: auto;
 }
-
 .pdftxt {
     margin: auto;
 }
@@ -311,13 +291,11 @@ p {
 #contacte {
     width: fit-content;
 }
-
 .contactTtl {
     font-weight: bold;
     color: #305B2C;
     margin-right: 10px;
 }
-
 .contactTxt {
     text-decoration: none;
     font-size: 20px;
