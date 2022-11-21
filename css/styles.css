@@ -54,6 +54,7 @@ p {
     display: flex;
     width: fit-content;
     margin: auto;
+    padding-bottom: 30px;
 }
 .bottom_container {
     width: 95%;
@@ -187,7 +188,7 @@ p {
 .add {
     position: absolute;
     bottom: 0px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     padding: 30px;
     padding-right: 80px;
     text-decoration: none;
