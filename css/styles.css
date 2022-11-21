@@ -140,13 +140,14 @@ p {
 }
 
 .title {
-    font-family: 'Din Condensed', 'Merriweather', serif;
+    font-family: 'Karla', 'Merriweather', serif;
     margin-left: 20px;
     font-size: 30px;
     margin-right: 25px;
     text-decoration: none;
     margin: auto;
     color: #E8302A;
+    font-weight: bold;
 }
 
 .menu_tab {
