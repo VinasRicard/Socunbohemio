@@ -18,11 +18,15 @@
 }
 
 /* General */
+
+body {
+    background-color: #FEFEF6;
+}
+
 .page {
     width: 100%;
     height: 100%;
     margin-top: 10%;
-    background-color: #FEFEF6;
 }
 .columns {
     display: flex;
@@ -45,6 +49,52 @@ p {
     color: #305B2C;
     margin-top: 5px;
     margin-bottom: 25px;
+}
+
+/* Bottom bar */
+.socialmedia {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.bottom_container {
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.instagrambtn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.twitterbtn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.spotifybtn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.applebtn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.amazonbtn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.youtubebtn {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Menu */
@@ -71,16 +121,32 @@ p {
 
 .menu_tab {
     text-decoration: none;
-    font-size: 22px;
-    font-family: 'HeyTinyBold', 'Karla', sans-serif;
+    font-size: 32px;
+    font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
     margin: auto;
     color: #E8302A;
+    font-weight: bold;
+}
+
+.menu_tab_home {
+    text-decoration: none;
+    font-size: 32px;
+    font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
+    margin: auto;
+    color: #E8302A;
+    font-weight: bold;
 }
 
 .menu_tab:hover {
     margin: auto;
     color: black;
 }
+
+.menu_tab_home:hover {
+    margin: auto;
+    color: white;
+}
+
 
 /* Inici */
 .home {
@@ -90,7 +156,7 @@ p {
 }
 
 .add_container {
-    width: 95%;
+    width: 100%;
     height: 80%;
     position: absolute;
     margin: auto;
@@ -110,7 +176,8 @@ p {
 .add_title {
     size: 50px;
     color: white;
-    font-weight: bold;
+    font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
+    font-size: 35px;
     margin: auto;
     text-align: center;
 }
