@@ -75,26 +75,56 @@ p {
 .instagrambtn {
     margin-left: 10px;
     margin-right: 10px;
+    background: url("../res/instagram_green.png") no-repeat;
+    width: 50px;
+}
+.instagrambtn:hover{
+    background: url("../res/instagram_red.png") no-repeat;
 }
 .twitterbtn {
     margin-left: 10px;
     margin-right: 10px;
+    background: url("../res/twitter_green.png") no-repeat;
+    width: 50px;
+}
+.twitterbtn:hover{
+    background: url("../res/twitter_red.png") no-repeat;
 }
 .spotifybtn {
     margin-left: 10px;
     margin-right: 10px;
+    background: url("../res/spotify_green.png") no-repeat;
+    width: 50px;
+}
+.spotifybtn:hover{
+    background: url("../res/spotify_red.png") no-repeat;
 }
 .applebtn {
     margin-left: 10px;
     margin-right: 10px;
+    background: url("../res/apple_green.png") no-repeat;
+    width: 50px;
+}
+.applebtn:hover{
+    background: url("../res/apple_red.png") no-repeat;
 }
 .amazonbtn {
     margin-left: 10px;
     margin-right: 10px;
+    background: url("../res/prime_green.png") no-repeat;
+    width: 50px;
+}
+.amazonbtn:hover{
+    background: url("../res/prime_red.png") no-repeat;
 }
 .youtubebtn {
     margin-left: 10px;
     margin-right: 10px;
+    background: url("../res/youtube_green.png") no-repeat;
+    width: 50px;
+}
+.youtubebtn:hover{
+    background: url("../res/youtube_red.png") no-repeat;
 }
 
 /* Menu */
@@ -220,7 +250,7 @@ p {
 
 .buy_tickets {
     font-weight: bold;
-    color: #86C66F;
+    color: black;
     text-decoration: none;
     margin: auto;
     font-size: 20px;
@@ -229,12 +259,13 @@ p {
 
 .sold_out {
     font-weight: bold;
-    color: #FF7C76;
+    color: black;
+    opacity: 50%;
 }
 
 .free {
     font-weight: bold;
-    color: #F3CA3E;
+    color: black;
 }
 
 /* Lletres */
