@@ -18,112 +18,20 @@
 }
 
 /* General */
-
 body {
-    background-color: #FEFEF6;
-    margin-bottom: 30px;
-}
-.page {
-    width: 100%;
-    margin-top: 10%;
-}
-.columns {
-    display: flex;
-    height: fit-content;
-    margin: auto;
-}
-.column2 {
-    width: 50%;
-}
-.main_img {
-    width: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center; 
+    background-color: black;
 }
 p {
-    font-family: 'AlteHaasGroteskRegular', 'Karla', sans-serif;
-    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    color: white;
 }
-.subtitle {
-    font-family: 'AlteHaasGroteskBold','Karla', sans-serif;
-    color: #305B2C;
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
-
-/* Bottom bar */
-.socialmedia {
-    display: flex;
-    width: fit-content;
-    margin: auto;
-    padding-bottom: 30px;
-}
-.bottom_container {
-    width: 95%;
-    height: 90%;
-    position: absolute;
-    margin: auto;
-    margin-top: 10%;
-}
-.bottom {
-    position: fixed;
-    z-index: 100; 
-    bottom: 0; 
-    left: 0;
-    width: 100%;
-    background-color: #FEFEF6;
-}
-.instagrambtn {
-    margin-left: 10px;
-    margin-right: 10px;
-    background: url("../res/instagram_green.png") no-repeat;
-    width: 50px;
-}
-.instagrambtn:hover{
-    background: url("../res/instagram_red.png") no-repeat;
-}
-.twitterbtn {
-    margin-left: 10px;
-    margin-right: 10px;
-    background: url("../res/twitter_green.png") no-repeat;
-    width: 50px;
-}
-.twitterbtn:hover{
-    background: url("../res/twitter_red.png") no-repeat;
-}
-.spotifybtn {
-    margin-left: 10px;
-    margin-right: 10px;
-    background: url("../res/spotify_green.png") no-repeat;
-    width: 50px;
-}
-.spotifybtn:hover{
-    background: url("../res/spotify_red.png") no-repeat;
-}
-.applebtn {
-    margin-left: 10px;
-    margin-right: 10px;
-    background: url("../res/apple_green.png") no-repeat;
-    width: 50px;
-}
-.applebtn:hover{
-    background: url("../res/apple_red.png") no-repeat;
-}
-.amazonbtn {
-    margin-left: 10px;
-    margin-right: 10px;
-    background: url("../res/prime_green.png") no-repeat;
-    width: 50px;
-}
-.amazonbtn:hover{
-    background: url("../res/prime_red.png") no-repeat;
-}
-.youtubebtn {
-    margin-left: 10px;
-    margin-right: 10px;
-    background: url("../res/youtube_green.png") no-repeat;
-    width: 50px;
-}
-.youtubebtn:hover{
-    background: url("../res/youtube_red.png") no-repeat;
+h3 {
+    color: white;
+    font-family: AlteHaasGroteskBold;
 }
 
 /* Menu */
@@ -172,32 +80,60 @@ p {
     color: white;
 }
 
-/* Inici */
-.home {
+/* Bottom */
+.bottom_container {
     width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+}
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    padding-bottom: 15px;
+}
+.credits{
+    float: left;
+    margin-left: 20px;
+}
+.vida{
+    position: relative;
+    float: right;
+    height: 40px;
+    margin: auto;
+    margin-right: 25px;
+}
+.credits_txt {
+    margin: 0px;
+    font-size: 12px;
+}
+
+/* Home */
+#home {
     background-image: url('../res/home_bkg.jpg');
-    background-size: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .add_container {
     width: 100%;
-    height: 80%;
+    height: 100%;
     position: absolute;
     margin: auto;
-    margin-top: 10%;
 }
 .add {
     position: absolute;
     bottom: 0px;
-    margin-bottom: 100px;
-    padding: 30px;
-    padding-right: 80px;
     text-decoration: none;
-    width: 95%;;
+    width: 100%;
+    margin-bottom: 17%;
 }
 .add_title {
     size: 50px;
     color: white;
-    font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
+    font-family: 'Reenie Beanie', 'Karla', sans-serif;
     font-size: 35px;
     margin: auto;
     text-align: center;
@@ -205,112 +141,16 @@ p {
 .add_title:hover {
     color: #E8302A;
 }
-.add_subtitle {
-    size: 40px;
-    color: white;
-}
-#bottomhome {
-    position: fixed;
-    z-index: 100; 
-    bottom: 0; 
-    left: 0;
-    width: 100%;
-}
 
-/* Sobr el projecte */
-.sobrelprojecte {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    display: flex;
+/* Sobre el projecte */
+#projecte {
+    background-image: url('../res/projecte.jpg');
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
-.sobrelprojecteinfo {
+#projecte_info {
+    margin-left: 10%;
     height: fit-content;
     margin-top: 10%;
-    margin-left: 50px;
-    float: left;
-}
-#imatge_proj {
-    width: 38%;
-    object-fit:scale-down;
-    float: right;
-}
-
-/* Concerts */
-.concerts {
-    width: fit-content;
-    margin: auto;
-}
-.date {
-    margin-right: 20px;
-}
-.concert_name {
-    margin-right: 20px;
-}
-.buy_tickets {
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    margin: auto;
-    font-size: 20px;
-    font-family: 'AlteHaasGroteskRegular', 'Karla', sans-serif;
-}
-.sold_out {
-    font-weight: bold;
-    color: black;
-    opacity: 50%;
-}
-.free {
-    font-weight: bold;
-    color: black;
-}
-
-/* Lletres */
-.album_container {
-    width: 100%;
-}
-.album_title {
-    font-family: 'Karla', sans-serif;
-    color: #305B2C;
-    margin-bottom: 25px;
-    font-size: 22px;
-    margin-top: 50px;
-    width: 100%;
-}
-.song {
-    display: flex;
-    height: fit-content;
-    width: 100%;
-    padding-left: 10px;
-}
-#lletres {
-    width: 80%;
-    margin: auto;
-    margin-top: 10%;
-}
-.pdfimage {
-    height: 30px;
-    margin-right: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.pdftxt {
-    margin: auto;
-}
-
-/* Contacte */
-#contacte {
-    width: fit-content;
-}
-.contactTtl {
-    font-weight: bold;
-    color: #305B2C;
-    margin-right: 10px;
-}
-.contactTxt {
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Karla', sans-serif;
-    color: black;
-    margin: auto;
+    width: 40%;
 }
