@@ -127,6 +127,13 @@ h3 {
 .credits_txt {
     margin: 0px;
     font-size: 12px;
+    text-decoration: none;
+    font-family:'Karla', sans-serif;
+    color: white;
+    padding-right: 5px;
+}
+.copyright {
+    display: flex;
 }
 
 /* Home */
@@ -217,14 +224,14 @@ h3 {
 
 /* Contacte */
 #contacte {
-    background-image: url('../res/concerts.jpg');
+    background-image: url('../res/contacte.jpg');
     overflow-x: hidden;
     overflow-y: hidden;
 }
 #contacte_info {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
