@@ -214,3 +214,37 @@ h3 {
     margin: 10px;
     opacity: 70%;
 }
+
+/* Contacte */
+#contacte {
+    background-image: url('../res/concerts.jpg');
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#contacte_info {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    text-align: center;
+}
+.contacte {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+.contacte_title {
+    font-size: 20px;
+    margin: 10px;
+}
+.contacte_txt {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: none;
+    font-family: AlteHaasGroteskBold;
+    color: white;
+}
