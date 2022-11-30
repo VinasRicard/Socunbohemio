@@ -222,6 +222,23 @@ h3 {
     opacity: 70%;
 }
 
+/* Lletres i acords */
+#lletres {
+    background-image: url('../res/lletres.jpg');
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#lletres_info {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    text-align: center;
+}
+
 /* Contacte */
 #contacte {
     background-image: url('../res/contacte.jpg');
