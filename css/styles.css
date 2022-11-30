@@ -28,10 +28,28 @@ body {
 p {
     font-family: 'Karla', sans-serif;
     color: white;
+    text-align: justify;
 }
 h3 {
     color: white;
+    font-size: 28px;
     font-family: AlteHaasGroteskBold;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+}
+.opacity {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 30%;
 }
 
 /* Menu */
@@ -146,11 +164,53 @@ h3 {
 #projecte {
     background-image: url('../res/projecte.jpg');
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 #projecte_info {
-    margin-left: 10%;
-    height: fit-content;
-    margin-top: 10%;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 40%;
+}
+
+/* Concerts */
+#concerts {
+    background-image: url('../res/concerts.jpg');
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#concerts_info {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    text-align: center;
+}
+.concert {
+    display: flex;
+    width: fit-content;
+}
+.concert_txt {
+    font-size: 20px;
+    margin: 10px;
+}
+.ticket_buy {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: none;
+    font-family: AlteHaasGroteskBold;
+    color: white;
+}
+.ticket_sold {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    opacity: 70%;
 }
