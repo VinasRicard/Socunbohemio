@@ -119,6 +119,7 @@
         margin: auto;
         color: white;
     }
+    #hamnav label, #hamburger { display: none; }
 
     /* Bottom */
     .bottom {
@@ -494,13 +495,11 @@
     /* Menu */
     .menu {
         width: 100%;
-        height: fit-content;
         position: fixed;
         top: 0px;
         padding-top: 20px;
         padding-bottom: 20px;
         left: 0px;
-        display: flex;
     }
     .menu2 {
         width: 100%;
@@ -508,17 +507,17 @@
         padding-top: 20px;
         padding-bottom: 20px;
         left: 0px;
-        display: flex;
     }
     .title {
+        position: absolute;
+        width: 100%;
         font-family: 'Karla', 'Merriweather', serif;
-        margin-left: 20px;
         font-size: 30px;
-        margin-right: 25px;
         text-decoration: none;
-        margin: auto;
         color: #E8302A;
         font-weight: bold;
+        margin: auto;
+        text-align: center;
     }
     .menu_tab {
         text-decoration: none;
@@ -527,15 +526,32 @@
         margin: auto;
         color: #E8302A;
         font-weight: bold;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        height: 10%;
     }
+    .menu_tab {display: none;}
+    .menu input:checked ~ .menu_tab { display: block; }
+    .menu input:checked ~ .menu_tab { height: 100%; background-color: aqua; }
     .menu_tab_home {
         text-decoration: none;
+        padding-top: 40px;
         font-size: 32px;
         font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
         margin: auto;
         color: #E8302A;
         font-weight: bold;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 10%;
     }
+    .menu_tab_home {display: none;}
+    .menu input:checked ~ .menu_tab_home { display: block; }
     .menu_tab:hover {
         margin: auto;
         color: black;
@@ -544,16 +560,14 @@
         margin: auto;
         color: white;
     }
-    .checkbox {
+    #check0, #check0::before, #check0::after {
+        width: 40px;
+        height: 40px;
         position: absolute;
-        display: block;
-        height: 32px;
-        width: 32px;
-        top: 20px;
-        left: 20px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
+        right: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: blue;
     }
 
     /* Bottom */
@@ -724,6 +738,8 @@
         font-size: 35px;
         margin: auto;
         text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .add_title:hover {
         color: #E8302A;
