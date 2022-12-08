@@ -364,11 +364,11 @@
         overflow-x: hidden;
     }
     #lletres_info {
-        width: 80%;
+        width: fit-content;
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: fit-content fit-content fit-content;
         margin-top: 80px;
     }
     #lletres_contingut {
@@ -377,12 +377,15 @@
         top: 0px;
         background-color: rgba(0, 0, 0, 0.48);
         overflow-x: hidden;
+        left: 0px;
     }
     .album_title {
         font-size: 25px;
+        width: fit-content;
     }
     .album {
         width: fit-content;
+        margin-bottom: 50px;
     }
     .song {
         display: flex;
@@ -401,6 +404,9 @@
         margin-top: auto;
         margin-bottom: auto;
         padding-left: 20px;
+    }
+    #lletres2 {
+        display: none;
     }
 
 
@@ -548,7 +554,6 @@
         text-align: center;
         height: 10%;
     }
-    .menu_tab {display: none;}
     .menu input:checked ~ .menu_tab { display: block; }
     .menu input:checked ~ .menu_tab { height: 100%; background-color: aqua; }
     .menu_tab_home {
@@ -567,6 +572,7 @@
     }
     .menu_tab_home {display: none;}
     .menu input:checked ~ .menu_tab_home { display: block; }
+    .menu2 input:checked ~ .menu_tab_home { display: block; }
     .menu_tab:hover {
         margin: auto;
         color: black;
@@ -610,7 +616,7 @@
         width: 100%;
         display: flex;
         padding-bottom: 15px;
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .credits{
         float: left;
@@ -649,7 +655,6 @@
         margin-bottom: 12%;
     }
     .socialmedia2 {
-        position: absolute;
         display: grid;
         grid-template-columns: 50px 50px 50px 50px 50px 50px;
         width: fit-content;
@@ -657,6 +662,7 @@
         right:0;
         margin-left:auto;
         margin-right:auto;
+        margin-top: 30px;
     }
     .instagrambtn {
         background: url("../res/instagram_green.png") no-repeat;
@@ -831,7 +837,7 @@
         overflow-x: hidden;
     }
     #lletres_info {
-        width: 80%;
+        width: fit-content;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -843,6 +849,7 @@
         top: 0px;
         background-color: rgba(0, 0, 0, 0.48);
         overflow-x: hidden;
+        left: 0px;
     }
     .album_title {
         font-size: 25px;
@@ -867,6 +874,9 @@
         margin-top: auto;
         margin-bottom: auto;
         padding-left: 20px;
+    }
+    #lletres1 {
+        display: none;
     }
 
 
