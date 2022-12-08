@@ -1,6 +1,6 @@
-let menu0 = document.getElementById('menu0');
+let menu0 = document.getElementById('menu3');
 
-var checkbox0 = document.getElementById('check0');
+var checkbox0 = document.getElementById('check3');
 
 checkbox0.addEventListener('change', function() {
   if (this.checked) {
