@@ -445,7 +445,7 @@
     }
 }
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 60rem) and (min-width: 40rem) {
     /* Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Karla:wght@400;700&family=Merriweather&family=Reenie+Beanie&display=swap');
     @font-face {
@@ -552,7 +552,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        height: 10%;
+        height: fit-content;
     }
     .menu input:checked ~ .menu_tab { display: block; }
     .menu input:checked ~ .menu_tab { height: 100%; background-color: aqua; }
@@ -568,7 +568,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        height: 10%;
+        height: fit-content;
     }
     .menu_tab_home {display: none;}
     .menu input:checked ~ .menu_tab_home { display: block; }
@@ -906,6 +906,479 @@
         margin: 10px;
     }
     .contacte_txt {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px;
+        text-decoration: none;
+        font-family: AlteHaasGroteskBold;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    /* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Karla:wght@400;700&family=Merriweather&family=Reenie+Beanie&display=swap');
+    @font-face {
+        font-family: AlteHaasGroteskBold;
+        src: url(../fonts/AlteHaasGroteskBold.ttf);
+    }
+    @font-face {
+        font-family: AlteHaasGroteskRegular;
+        src: url(../fonts/AlteHaasGroteskRegular.ttf);
+    }
+    @font-face {
+        font-family: HeyTinyBold;
+        src: url(../fonts/HeyTinyBold.ttf);
+    }
+    @font-face {
+        font-family: HeyTinyThin;
+        src: url(../fonts/HeyTinyThin.ttf);
+    }
+
+    /* General */
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+        background-position: center; 
+        background-color: black;
+    }
+    p {
+        font-family: 'Karla', sans-serif;
+        color: white;
+        text-align: justify;
+    }
+    h3 {
+        color: white;
+        font-size: 1.5em;
+        font-family: AlteHaasGroteskBold;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: auto;
+    }
+    .opacity {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: black;
+        opacity: 30%;
+        height: 100%;
+    }
+    .opacity2 {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: black;
+        opacity: 30%;
+    }
+
+    /* Menu */
+    .menu {
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        left: 0px;
+    }
+    .menu2 {
+        width: 100%;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        left: 0px;
+    }
+    #sp {
+        margin-top: 80px;
+    }
+    .title {
+        position: absolute;
+        width: 100%;
+        font-family: 'Karla', 'Merriweather', serif;
+        font-size: 1.3em;
+        text-decoration: none;
+        color: #E8302A;
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+    }
+    .menu_tab {
+        text-decoration: none;
+        font-size: 32px;
+        font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
+        margin: auto;
+        color: #E8302A;
+        font-weight: bold;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+    }
+    .menu input:checked ~ .menu_tab { display: block; }
+    .menu input:checked ~ .menu_tab { height: 100%; background-color: aqua; }
+    .menu_tab_home {
+        text-decoration: none;
+        padding-top: 40px;
+        font-size: 32px;
+        font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
+        margin: auto;
+        color: #E8302A;
+        font-weight: bold;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+    }
+    .menu_tab_home {display: none;}
+    .menu input:checked ~ .menu_tab_home { display: block; }
+    .menu2 input:checked ~ .menu_tab_home { display: block; }
+    .menu_tab:hover {
+        margin: auto;
+        color: black;
+    }
+    .menu_tab_home:hover {
+        margin: auto;
+        color: white;
+    }
+    .check {
+        display: none;
+    }
+    .checker {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 25px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-image: url(/res/menu.png);
+        background-position: left center;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+    }
+    .barras {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Bottom */
+    .bottom {
+        position: absolute;
+        bottom: 0px;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        padding-bottom: 15px;
+    }
+    .bottom2 {
+        bottom: 0px;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        padding-bottom: 15px;
+        margin-top: 40px;
+    }
+    .credits{
+        float: left;
+        margin-left: 20px;
+    }
+    .vida{
+        position: relative;
+        float: right;
+        height: 40px;
+        margin: auto;
+        margin-right: 25px;
+    }
+    .credits_txt {
+        margin: 0px;
+        font-size: 0.5em;
+        text-decoration: none;
+        font-family:'Karla', sans-serif;
+        color: white;
+        padding-right: 5px;
+    }
+    .copyright {
+        display: flex;
+    }
+
+    /* Social media */
+    .socialmedia {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px 50px;
+        width: fit-content;
+        bottom: 0px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 70px;
+    }
+    .socialmedia2 {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px 50px;
+        width: fit-content;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 30px;
+    }
+    .instagrambtn {
+        background: url("../res/instagram_green.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        margin: auto;
+    }
+    .instagrambtn:hover{
+        background: url("../res/instagram_red.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+    }
+    .twitterbtn {
+        background: url("../res/twitter_green.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        margin: auto;
+    }
+    .twitterbtn:hover{
+        background: url("../res/twitter_red.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+    }
+    .spotifybtn {
+        background: url("../res/spotify_green.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        margin: auto;
+    }
+    .spotifybtn:hover{
+        background: url("../res/spotify_red.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+    }
+    .applebtn {
+        background: url("../res/apple_green.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        margin: auto;
+    }
+    .applebtn:hover{
+        background: url("../res/apple_red.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+    }
+    .amazonbtn {
+        background: url("../res/prime_green.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        margin: auto;
+    }
+    .amazonbtn:hover{
+        background: url("../res/prime_red.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+    }
+    .youtubebtn {
+        background: url("../res/youtube_green.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        margin: auto;
+    }
+    .youtubebtn:hover{
+        background: url("../res/youtube_red.png") no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+    }
+
+    /* Home */
+    #home {
+        background-image: url('../res/home_bkg.jpg');
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .add_container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: auto;
+    }
+    .add {
+        position: absolute;
+        bottom: 0px;
+        text-decoration: none;
+        width: 100%;
+        margin-bottom: 40%;
+    }
+    .add_title {
+        size: 50px;
+        color: white;
+        font-family: 'Reenie Beanie', 'Karla', sans-serif;
+        font-size: 35px;
+        margin: auto;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .add_title:hover {
+        color: #E8302A;
+    }
+
+    /* Sobre el projecte */
+    #projecte {
+        background-image: url('../res/projecte.jpg');
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #projecte_info {
+        margin: auto;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    /* Concerts */
+    #concerts {
+        background-image: url('../res/concerts.jpg');
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #concerts_info {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .concert {
+        display: flex;
+        width: fit-content;
+    }
+    .concert_txt {
+        font-size: 1em;
+        margin: 10px;
+    }
+    .ticket_buy {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 10px;
+        text-decoration: none;
+        font-family: AlteHaasGroteskBold;
+        color: white;
+    }
+    .ticket_sold {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 10px;
+        opacity: 70%;
+    }
+
+    /* Lletres i acords */
+    #lletres {
+        background-image: url('../res/lletres.jpg');
+        overflow-x: hidden;
+    }
+    #lletres_info {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    #lletres_contingut {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.48);
+        overflow-x: hidden;
+        left: 0px;
+    }
+    .album_title {
+        font-size: 25px;
+    }
+    .album {
+        width: fit-content;
+        margin-left: 20px;
+    }
+    .song {
+        display: flex;
+    }
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    text-decoration: none;
+    color: #E8302A;
+    }
+    .song_txt {
+        font-size: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 20px;
+    }
+    #lletres1 {
+        display: none;
+    }
+
+
+    /* Contacte */
+    #contacte {
+        background-image: url('../res/contacte.jpg');
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #contacte_info {
+        margin: 0;
+        position: absolute;
+        top: 29%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        text-align: center;
+    }
+    .contacte {
+        width: fit-content;
+        margin: auto;
+    }
+    .contacte_title {
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    .contacte_txt {
+        text-align: center;
         font-size: 18px;
         font-weight: bold;
         margin: 10px;
