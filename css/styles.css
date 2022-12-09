@@ -621,6 +621,9 @@
     .credits{
         float: left;
         margin-left: 20px;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto
     }
     .vida{
         position: relative;
@@ -958,6 +961,8 @@
         height: 100%;
         position: absolute;
         margin: auto;
+        overflow-y: hidden;
+        overflow-y: hidden;
     }
     .opacity {
         content: "";
@@ -969,6 +974,9 @@
         background-color: black;
         opacity: 30%;
         height: 100%;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-y: hidden;
     }
     .opacity2 {
         content: "";
@@ -1058,7 +1066,7 @@
         width: 40px;
         height: 40px;
         position: absolute;
-        right: 25px;
+        right: 20px;
         margin-top: auto;
         margin-bottom: auto;
         background-image: url(/res/menu.png);
@@ -1067,8 +1075,8 @@
         background-repeat: no-repeat;
     }
     .barras {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     /* Bottom */
@@ -1078,7 +1086,7 @@
         text-decoration: none;
         width: 100%;
         display: flex;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
     .bottom2 {
         bottom: 0px;
@@ -1091,6 +1099,9 @@
     .credits{
         float: left;
         margin-left: 20px;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .vida{
         position: relative;
@@ -1115,7 +1126,7 @@
     .socialmedia {
         position: absolute;
         display: grid;
-        grid-template-columns: 50px 50px 50px 50px 50px 50px;
+        grid-template-columns: 42px 42px 42px 42px 42px 42px;
         width: fit-content;
         bottom: 0px;
         left:0;
@@ -1136,81 +1147,81 @@
     }
     .instagrambtn {
         background: url("../res/instagram_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
         margin: auto;
     }
     .instagrambtn:hover{
         background: url("../res/instagram_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
     }
     .twitterbtn {
         background: url("../res/twitter_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
         margin: auto;
     }
     .twitterbtn:hover{
         background: url("../res/twitter_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
     }
     .spotifybtn {
         background: url("../res/spotify_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
         margin: auto;
     }
     .spotifybtn:hover{
         background: url("../res/spotify_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
     }
     .applebtn {
         background: url("../res/apple_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
         margin: auto;
     }
     .applebtn:hover{
         background: url("../res/apple_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
     }
     .amazonbtn {
         background: url("../res/prime_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
         margin: auto;
     }
     .amazonbtn:hover{
         background: url("../res/prime_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
     }
     .youtubebtn {
         background: url("../res/youtube_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
         margin: auto;
     }
     .youtubebtn:hover{
         background: url("../res/youtube_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
     }
 
     /* Home */

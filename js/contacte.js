@@ -11,3 +11,10 @@ checkbox0.addEventListener('change', function() {
     menu0.style.backgroundColor = "rgba(0, 0, 0, 0)";
   }
 });
+
+let back = document.getElementById('op3');
+var win = window;
+var doc = document;
+body = doc.getElementsByTagName('body')[0];
+back.style.height = x = win.innerWidth || docElem.clientWidth || body.clientWidth;
+back.style.width = y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
