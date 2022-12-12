@@ -341,30 +341,27 @@
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: fit-content;
-        text-align: center;
-    }
-    .concert {
-        display: flex;
-        width: fit-content;
+        width: max-content;
     }
     .concert_txt {
         font-size: 20px;
-        margin: 10px;
+        margin-top: 50px;
     }
     .ticket_buy {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
-        margin: 10px;
         text-decoration: none;
         font-family: AlteHaasGroteskBold;
         color: white;
+        width: fit-content;
+        text-align: left;
     }
     .ticket_sold {
         font-size: 20px;
         font-weight: bold;
         margin: 10px;
         opacity: 70%;
+        padding-bottom: 10px;
     }
 
     /* Lletres i acords */
@@ -812,11 +809,6 @@
     }
 
     /* Concerts */
-    #concerts {
-        background-image: url('../res/concerts.jpg');
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
     #concerts_info {
         margin: 0;
         position: absolute;
@@ -825,32 +817,26 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: max-content;
-        text-align: center;
-    }
-    .concert {
-        display: flex;
-        width: fit-content;
     }
     .concert_txt {
         font-size: 20px;
-        margin: 10px;
-        width: fit-content;
+        margin-top: 50px;
     }
     .ticket_buy {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
-        margin: 10px;
         text-decoration: none;
         font-family: AlteHaasGroteskBold;
         color: white;
         width: fit-content;
+        text-align: left;
     }
     .ticket_sold {
         font-size: 20px;
         font-weight: bold;
         margin: 10px;
         opacity: 70%;
-        width: fit-content;
+        padding-bottom: 10px;
     }
 
     /* Lletres i acords */
@@ -1304,33 +1290,27 @@
         overflow-y: hidden;
     }
     #concerts_info {
-        margin: 0;
+        margin: 20px;
         position: absolute;
-        top: 45%;
+        top: 30%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: fit-content;
-        text-align: center;
-    }
-    .concert {
-        display: grid;
         width: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
     }
     .concert_txt {
         font-size: 1em;
-        margin: 10px;
+        margin-top: 50px;
+        text-align: left;
     }
     .ticket_buy {
         font-size: 1em;
         font-weight: bold;
-        margin: 10px;
         text-decoration: none;
         font-family: AlteHaasGroteskBold;
         color: white;
         width: fit-content;
-        padding-bottom: 10px;
+        text-align: left;
     }
     .ticket_sold {
         font-size: 1em;
