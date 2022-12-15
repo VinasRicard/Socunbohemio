@@ -18,9 +18,10 @@ checkbox0.addEventListener('change', function() {
 });
 
 
-/*document.body.className = 'fade';
+let cont = document.getElementById('home_c');
+cont.className = 'fade';
 document.addEventListener("DOMContentLoaded", () => {
   window.setTimeout(function() {
-    document.body.classList.remove('fade');
+    cont.classList.remove('fade');
   }, 230);
-});*/
+});

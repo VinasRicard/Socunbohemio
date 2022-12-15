@@ -17,10 +17,11 @@ checkbox0.addEventListener('change', function() {
 });
 
 
-/*document.body.className = 'fade';
+let cont = document.getElementById('contacte_c');
+cont.className = 'fade';
 document.addEventListener("DOMContentLoaded", () => {
   window.setTimeout(function() {
-    document.body.classList.remove('fade');
+    cont.classList.remove('fade');
   }, 230);
-});*/
+});
 

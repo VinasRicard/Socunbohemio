@@ -19,10 +19,18 @@ checkbox0.addEventListener('change', function() {
   }
 });
 
-
-/*document.body.className = 'fade';
+let page = document.getElementById('lletres_info');
+page.className = 'fade';
 document.addEventListener("DOMContentLoaded", () => {
   window.setTimeout(function() {
-    document.body.classList.remove('fade');
+    page.classList.remove('fade');
   }, 230);
-});*/
+});
+
+let page2 = document.getElementById('lletres_info2');
+page.className = 'fade';
+document.addEventListener("DOMContentLoaded", () => {
+  window.setTimeout(function() {
+    page2.classList.remove('fade');
+  }, 230);
+});

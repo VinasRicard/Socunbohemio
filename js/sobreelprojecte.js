@@ -16,10 +16,10 @@ checkbox0.addEventListener('change', function() {
   }
 });
 
-/*let page = document.getElementById('page');
-page.className = 'fade';
+let cont = document.getElementById('proj_c');
+cont.className = 'fade';
 document.addEventListener("DOMContentLoaded", () => {
   window.setTimeout(function() {
-    page.classList.remove('fade');
+    cont.classList.remove('fade');
   }, 230);
-});*/
+});

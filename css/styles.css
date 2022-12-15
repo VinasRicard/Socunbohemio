@@ -18,6 +18,62 @@
     src: url(../fonts/HeyTinyThin.ttf);
 }
 
+#home_c {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#home_c.fade {
+opacity: 0;
+}
+#proj_c {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#proj_c.fade {
+opacity: 0;
+}
+#concerts_c {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#concerts_c.fade {
+opacity: 0;
+}
+#lletres_info {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#lletres_info.fade {
+opacity: 0;
+}
+#lletres_info2 {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#lletres_info2.fade {
+opacity: 0;
+}
+#contacte_c {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#contacte_c.fade {
+opacity: 0;
+}
+
+
 
 @media screen and (min-width: 60rem) {
 
@@ -68,15 +124,6 @@
         background-color: black;
         opacity: 30%;
     }
-    body {
-        opacity: 1;
-        transition-duration: 0.7s;
-        transition-property: opacity;
-      }
-    
-      body.fade {
-        opacity: 0;
-      }
     
 
     /* Menu */
