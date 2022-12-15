@@ -16,4 +16,10 @@ checkbox0.addEventListener('change', function() {
   }
 });
 
-
+/*let page = document.getElementById('page');
+page.className = 'fade';
+document.addEventListener("DOMContentLoaded", () => {
+  window.setTimeout(function() {
+    page.classList.remove('fade');
+  }, 230);
+});*/

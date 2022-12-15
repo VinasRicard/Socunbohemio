@@ -18,3 +18,11 @@ checkbox0.addEventListener('change', function() {
     barras.src = "../res/menu.png";
   }
 });
+
+
+/*document.body.className = 'fade';
+document.addEventListener("DOMContentLoaded", () => {
+  window.setTimeout(function() {
+    document.body.classList.remove('fade');
+  }, 230);
+});*/

@@ -44,12 +44,6 @@
         font-size: 28px;
         font-family: AlteHaasGroteskBold;
     }
-    .container {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        margin: auto;
-    }
     .opacity {
         content: "";
         width: 110%;
@@ -74,6 +68,16 @@
         background-color: black;
         opacity: 30%;
     }
+    body {
+        opacity: 1;
+        transition-duration: 0.7s;
+        transition-property: opacity;
+      }
+    
+      body.fade {
+        opacity: 0;
+      }
+    
 
     /* Menu */
     .menu {
