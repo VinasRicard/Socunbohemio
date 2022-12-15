@@ -1,4 +1,12 @@
 
+let cont = document.getElementById('home_c');
+cont.className = 'fade';
+document.addEventListener("DOMContentLoaded", () => {
+  window.setTimeout(function() {
+    cont.classList.remove('fade');
+  }, 230);
+});
+
 let menu0 = document.getElementById('menu0');
 
 var checkbox0 = document.getElementById('check0');
@@ -18,10 +26,3 @@ checkbox0.addEventListener('change', function() {
 });
 
 
-let cont = document.getElementById('home_c');
-cont.className = 'fade';
-document.addEventListener("DOMContentLoaded", () => {
-  window.setTimeout(function() {
-    cont.classList.remove('fade');
-  }, 230);
-});

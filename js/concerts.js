@@ -1,3 +1,11 @@
+let cont = document.getElementById('concerts_c');
+cont.className = 'fade';
+document.addEventListener("DOMContentLoaded", () => {
+  window.setTimeout(function() {
+    cont.classList.remove('fade');
+  }, 230);
+});
+
 let menu0 = document.getElementById('menu2');
 
 var checkbox0 = document.getElementById('check2');
@@ -16,10 +24,4 @@ checkbox0.addEventListener('change', function() {
   }
 });
 
-let cont = document.getElementById('concerts_c');
-cont.className = 'fade';
-document.addEventListener("DOMContentLoaded", () => {
-  window.setTimeout(function() {
-    cont.classList.remove('fade');
-  }, 230);
-});
+
