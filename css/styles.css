@@ -100,6 +100,11 @@ opacity: 0;
         font-size: 28px;
         font-family: AlteHaasGroteskBold;
     }
+    h2 {
+        color: white;
+        font-size: 28px;
+        font-family: AlteHaasGroteskBold;
+    }
     .opacity {
         content: "";
         width: 110%;
@@ -541,6 +546,11 @@ opacity: 0;
         text-align: justify;
     }
     h3 {
+        color: white;
+        font-size: 28px;
+        font-family: AlteHaasGroteskBold;
+    }
+    h2 {
         color: white;
         font-size: 28px;
         font-family: AlteHaasGroteskBold;
@@ -1013,6 +1023,11 @@ opacity: 0;
         text-align: justify;
     }
     h3 {
+        color: white;
+        font-size: 1.5em;
+        font-family: AlteHaasGroteskBold;
+    }
+    h2 {
         color: white;
         font-size: 1.5em;
         font-family: AlteHaasGroteskBold;
