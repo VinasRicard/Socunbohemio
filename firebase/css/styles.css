@@ -393,7 +393,7 @@ opacity: 0;
     #concerts_info {
         margin: 0;
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -873,7 +873,7 @@ opacity: 0;
     #concerts_info {
         margin: 0;
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -1356,7 +1356,7 @@ opacity: 0;
     }
     #concerts_info {
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
