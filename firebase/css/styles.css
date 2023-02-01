@@ -393,7 +393,7 @@ opacity: 0;
     #concerts_info {
         margin: 0;
         position: absolute;
-        top: 25%;
+        top: 20%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -925,14 +925,11 @@ opacity: 0;
     #concerts_info {
         margin: 0;
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: max-content;
-    }
-    .titolConcerts {
-        margin-right: 30px;
     }
     .concert_txt {
         font-size: 20px;
@@ -955,50 +952,50 @@ opacity: 0;
         padding-bottom: 10px;
     }
 
-    /* Botiga */
-    #botiga {
-        background-image: url('../res/botiga.jpg');
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-    .botigacontainer {
-        width: fit-content;
-        height: 60%;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        background-color: aqua;
-    }
-    .botigaelement {
-        height: 100%;
-        width: fit-content;
-        background-color: black;
-        position: relative;
-    }
-    .botigaimg {
-        height: 50%;
-        opacity: 100%;
-    }
-    .botigaelement:hover .botigaimg {
-        opacity: 30%;
-    }
-    .botigatxt {
-        text-decoration: none;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 100%;
-        text-align: center;
-    }
-    .botigaelement:hover .botigatxt {
-        color: #E8302A;
-    }
+        /* Botiga */
+        #botiga {
+            background-image: url('../res/botiga.jpg');
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .botigacontainer {
+            width: fit-content;
+            height: 60%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background-color: aqua;
+        }
+        .botigaelement {
+            height: 100%;
+            width: fit-content;
+            background-color: black;
+            position: relative;
+        }
+        .botigaimg {
+            height: 50%;
+            opacity: 100%;
+        }
+        .botigaelement:hover .botigaimg {
+            opacity: 30%;
+        }
+        .botigatxt {
+            text-decoration: none;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+        }
+        .botigaelement:hover .botigatxt {
+            color: #E8302A;
+        }
 
     /* Lletres i acords */
     #lletres {
@@ -1461,10 +1458,6 @@ opacity: 0;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: 100%;
-    }
-    .titolConcerts {
-        margin-right: 25px;
-        margin-top: 30%;
     }
     .concert_txt {
         font-size: 1em;
