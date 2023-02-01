@@ -446,7 +446,6 @@ opacity: 0;
     .concert2 {
         margin-bottom: 50px;
         width: fit-content;
-        margin: auto;
     }
     .concert_txt {
         font-size: 20px;
@@ -470,6 +469,10 @@ opacity: 0;
     }
     #concerts22 {
         display: none;
+    }
+    .blockConcerts {
+        width: fit-content;
+        margin: auto;
     }
 
     /* Botiga */
@@ -1047,7 +1050,6 @@ opacity: 0;
     .concert2 {
         margin-bottom: 50px;
         width: fit-content;
-        margin: auto;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -1076,6 +1078,10 @@ opacity: 0;
     }
     #socialmediaconcerts {
         margin-top: 10px;
+    }
+    .blockConcerts {
+        width: fit-content;
+        margin: auto;
     }
 
     /* Botiga */
