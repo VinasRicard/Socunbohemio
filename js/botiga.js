@@ -15,7 +15,7 @@ var barras = document.getElementById('barras1');
 checkbox0.addEventListener('change', function() {
   if (this.checked) {
     menu0.style.height = "100%";
-    menu0.style.backgroundColor = "rgba(0, 0, 0, 0.92)";
+    menu0.style.backgroundColor = "rgba(0, 0, 0, 0.96)";
     barras.src = "../res/close.png";
   } else {
     menu0.style.height = "fit-content";
