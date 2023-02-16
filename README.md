@@ -3,4 +3,4 @@
 <h3 align="center">Socunbohemio is a musical project that mixes original music with softer indie. This website includes all the important information about the artist</h3>
 <h3 align="center">Built with HTML, CSS and JavaScript</h3>
 <br/>
-<img src="photo.jpeg">
+<img src="photo.png">
