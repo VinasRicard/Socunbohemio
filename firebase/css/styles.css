@@ -73,6 +73,12 @@ opacity: 0;
 opacity: 0;
 }
 
+.line {
+    background-color: white;
+    height: 2px;
+    width: 100%;
+}
+
 
 
 @media screen and (min-width: 60rem) {
@@ -444,21 +450,57 @@ opacity: 0;
         margin-top: 80px;
     }
     .concert2 {
-        margin-bottom: 50px;
-        width: fit-content;
+        width: 100%;
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .concert_txt {
-        font-size: 20px;
-        margin-top: 50px;
+        font-size: 1.8em;
+        width: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        font-weight: 900;
+        font-family: AlteHaasGroteskBold;
+    }
+    .concert_place {
+        font-size: 1.8em;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        font-weight: 300;
+        width: fit-content;
+    }
+    .concert_date {
+        font-size: 2em;
+        margin: 0;
+        font-family: AlteHaasGroteskBold;
+        margin-top: auto;
+        margin-bottom: auto
     }
     .ticket_buy {
-        font-size: 20px;
+        border-style: solid;
+        border-color: #E8302A;
+        margin-left: auto;
+        border-radius: 30px;
+        font-size: 25px;
         font-weight: bold;
-        text-decoration: none;
-        font-family: AlteHaasGroteskBold;
-        color: white;
+        font-family: AlteHaasGroteskRegular;
+        color: red;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-color: #E8302A;
         width: fit-content;
-        text-align: left;
+        margin-top: auto;
+        margin-bottom: auto;
+        float:right;
+    }
+    .ticket_buy:hover {
+        background-color: #E8302A;
+        color: white;
     }
     .ticket_sold {
         font-size: 20px;
@@ -473,6 +515,7 @@ opacity: 0;
     .blockConcerts {
         width: fit-content;
         margin: auto;
+        width: 75%;
     }
 
     /* Botiga */
@@ -608,6 +651,12 @@ opacity: 0;
         text-decoration: none;
         font-family: AlteHaasGroteskBold;
         color: white;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .concert_info {
+        display: flex;
     }
 }
 
@@ -1050,22 +1099,15 @@ opacity: 0;
     }
     .concert2 {
         margin-bottom: 50px;
-        width: fit-content;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .concert_txt {
-        font-size: 20px;
+        width: 100%;
         margin-top: 50px;
     }
-    .ticket_buy {
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: none;
+    .concert_date {
+        font-size: 30px;
+        margin: 0;
         font-family: AlteHaasGroteskBold;
-        color: white;
-        width: fit-content;
-        text-align: left;
+        margin-top: auto;
+        margin-bottom: auto
     }
     .ticket_sold {
         font-size: 20px;
@@ -1081,8 +1123,36 @@ opacity: 0;
         margin-top: 10px;
     }
     .blockConcerts {
-        width: fit-content;
+        width: 85%;
         margin: auto;
+    }
+    .concert_txt {
+        font-size: 1.4em;
+        margin-top: 10px;
+        font-weight: 900;
+        font-family: AlteHaasGroteskBold;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .concert_place {
+        font-size: 20px;
+        margin-top: 5px;
+        font-weight: 300;
+    }
+    .ticket_buy {
+        border-radius: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: AlteHaasGroteskRegular;
+        color: white;
+        background-color: #E8302A;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     /* Botiga */
@@ -1616,17 +1686,6 @@ opacity: 0;
         margin-left: 20px;
         margin-right: 20px;
     }
-    .ticket_buy {
-        font-size: 1em;
-        font-weight: bold;
-        text-decoration: none;
-        font-family: AlteHaasGroteskBold;
-        color: white;
-        width: fit-content;
-        text-align: left;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
     .ticket_sold {
         font-size: 1em;
         font-weight: bold;
@@ -1662,22 +1721,15 @@ opacity: 0;
     }
     .concert2 {
         margin-bottom: 50px;
-        width: fit-content;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .concert_txt {
-        font-size: 20px;
         margin-top: 50px;
+        width: 100%;
     }
-    .ticket_buy {
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: none;
+    .concert_date {
+        font-size: 30px;
+        margin: 0;
         font-family: AlteHaasGroteskBold;
-        color: white;
-        width: fit-content;
-        text-align: left;
+        margin-top: auto;
+        margin-bottom: auto
     }
     .ticket_sold {
         font-size: 20px;
@@ -1693,8 +1745,36 @@ opacity: 0;
         margin-top: 10px;
     }
     .blockConcerts {
-        width: fit-content;
+        width: 85%;
         margin: auto;
+    }
+    .concert_txt {
+        font-size: 1.4em;
+        margin-top: 10px;
+        font-weight: 900;
+        font-family: AlteHaasGroteskBold;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .concert_place {
+        font-size: 20px;
+        margin-top: 5px;
+        font-weight: 300;
+    }
+    .ticket_buy {
+        border-radius: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: AlteHaasGroteskRegular;
+        color: white;
+        background-color: #E8302A;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     /* Botiga */
