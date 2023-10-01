@@ -517,6 +517,15 @@ opacity: 0;
         margin: auto;
         width: 75%;
     }
+    .noConcerts {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
+    }
 
     /* Botiga */
     #botiga {
@@ -1093,6 +1102,15 @@ opacity: 0;
         margin: 10px;
         opacity: 70%;
         padding-bottom: 10px;
+    }
+    .noConcerts {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
     }
 
     /* Concerts2 */
@@ -1686,8 +1704,8 @@ opacity: 0;
         font-size: 35px;
         margin: auto;
         text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .add_title:hover {
         color: #E8302A;
@@ -1819,6 +1837,17 @@ opacity: 0;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .noConcerts {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     /* Botiga */
