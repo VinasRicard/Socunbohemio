@@ -1,0 +1,420 @@
+:root {
+    --main-color: #E8302A;
+    --white: #ffffff; 
+}
+
+#concerts_c {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#concerts_c.fade {
+opacity: 0;
+}
+#concerts {
+    background-image: url('../micro.jpg');
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@media screen and (min-width: 60rem) {
+    #concerts_info {
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: max-content;
+    }
+    .concert_txt {
+        font-size: 22px!important;
+        margin-top: 50px;
+    }
+    .ticket_buy {
+        font-size: 20px!important;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: AlteHaasGroteskBold;
+        color: white;
+        width: fit-content;
+        text-align: left;
+    }
+    .ticket_sold {
+        font-size: 20px!important;
+        font-weight: bold;
+        margin: 10px;
+        opacity: 70%;
+        padding-bottom: 10px;
+    }
+    
+    /* Concerts2 */
+    #concerts2 {
+        background-image: url('../res/micro.jpg');
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: fit-content;
+        background-position: center;
+    }
+    #concerts_contingut2 {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.48);
+        overflow-x: hidden;
+        left: 0px;
+        min-height: 100%;
+        height: fit-content;
+        padding-bottom: 100px;
+    }
+    #concerts_info2 {
+        width: fit-content;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .concert2 {
+        width: 100%;
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .concert_txt {
+        font-size: 1.8em;
+        width: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        font-weight: 900;
+        font-family: AlteHaasGroteskBold;
+    }
+    .concert_place {
+        font-size: 1.8em;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        font-weight: 300;
+        width: fit-content;
+    }
+    .concert_date {
+        font-size: 25px;
+        margin: 0;
+        font-family: AlteHaasGroteskBold;
+        margin-top: auto;
+        margin-bottom: auto
+    }
+    .ticket_buy {
+        border-style: solid;
+        border-color: #E8302A;
+        margin-left: auto;
+        border-radius: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: AlteHaasGroteskRegular;
+        color: red;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-color: #E8302A;
+        width: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        float:right;
+    }
+    .ticket_buy:hover {
+        background-color: #E8302A;
+        color: white;
+    }
+    .ticket_sold {
+        border-style: solid;
+        border-color: #E8302A;
+        margin-left: auto;
+        border-radius: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: AlteHaasGroteskRegular;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-color: white;
+        width: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        float:right;
+        text-decoration: none;
+    }
+    #concerts22 {
+        display: none;
+    }
+    .blockConcerts {
+        width: fit-content;
+        margin: auto;
+        width: 75%;
+    }
+    .noConcerts {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .concert_info {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 60rem) and (min-width: 40rem) {
+    #concerts_info {
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: max-content;
+    }
+    .concert_txt {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .ticket_buy {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: AlteHaasGroteskBold;
+        color: white;
+        width: fit-content;
+        text-align: left;
+    }
+    .ticket_sold {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: AlteHaasGroteskBold;
+        color: white;
+        width: fit-content;
+        text-align: left;
+    }
+    .noConcerts {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
+    }
+
+    /* Concerts2 */
+    #concerts2 {
+        background-image: url('../res/micro.jpg');
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: fit-content;
+    }
+    #concerts_contingut2 {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.48);
+        overflow-x: hidden;
+        left: 0px;
+        min-height: 100%;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    #concerts_info2 {
+        width: fit-content;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .concert2 {
+        margin-bottom: 50px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .concert_date {
+        font-size: 30px;
+        margin: 0;
+        font-family: AlteHaasGroteskBold;
+        margin-top: auto;
+        margin-bottom: auto
+    }
+    .ticket_sold {
+        border-radius: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: AlteHaasGroteskRegular;
+        color: #E8302A;
+        background-color: white;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #concerts21 {
+        display: none;
+    }
+    #socialmediaconcerts {
+        margin-top: 10px;
+    }
+    .blockConcerts {
+        width: 85%;
+        margin: auto;
+    }
+    .concert_txt {
+        font-size: 1.4em;
+        margin-top: 10px;
+        font-weight: 900;
+        font-family: AlteHaasGroteskBold;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .concert_place {
+        font-size: 20px;
+        margin-top: 5px;
+        font-weight: 300;
+    }
+    .ticket_buy {
+        border-radius: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: AlteHaasGroteskRegular;
+        color: white;
+        background-color: #E8302A;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    #concerts_info {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .concert_txt {
+        font-size: 1em;
+        margin-top: 50px;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Concerts2 */
+    #concerts2 {
+        background-image: url('../res/micro.jpg');
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: fit-content;
+    }
+    #concerts_contingut2 {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.48);
+        overflow-x: hidden;
+        left: 0px;
+        min-height: 100%;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    #concerts_info2 {
+        width: fit-content;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .concert2 {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .concert_date {
+        font-size: 30px;
+        margin: 0;
+        font-family: AlteHaasGroteskBold;
+        margin-top: auto;
+        margin-bottom: auto
+    }
+    .ticket_sold {
+        border-radius: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: AlteHaasGroteskRegular;
+        color: #E8302A;
+        background-color: white;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #concerts21 {
+        display: none;
+    }
+    #socialmediaconcerts {
+        margin-top: 10px;
+    }
+    .blockConcerts {
+        width: 85%;
+        margin: auto;
+    }
+    .concert_txt {
+        font-size: 1.4em;
+        margin-top: 10px;
+        font-weight: 900;
+        font-family: AlteHaasGroteskBold;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .concert_place {
+        font-size: 20px;
+        margin-top: 5px;
+        font-weight: 300;
+    }
+    .ticket_buy {
+        border-radius: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: AlteHaasGroteskRegular;
+        color: white;
+        background-color: #E8302A;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .noConcerts {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,33 @@
+/* Home banner */
+@keyframes infiniteScroll {
+    from {transform: translateX(0)}
+    to {transform: translateX(-50%)}
+  }
+  .scroll-container {
+    width: 100%;
+    overflow-x: hidden;
+    text-decoration: none;
+    font-family: AlteHaasGroteskBold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 140px;
+    margin-left: 0px;
+    transform: translateX(-5px);
+  }
+  .horizontal-scrolling-items {
+    display: flex;
+    font-size: 40px;
+    width: 2600px;
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: white;
+  }
+  .horizontal-scrolling-items__item {
+    white-space: nowrap;
+  }

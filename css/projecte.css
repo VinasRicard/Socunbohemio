@@ -1,0 +1,62 @@
+:root {
+    --main-color: #E8302A;
+    --white: #ffffff; 
+}
+
+#projecte {
+    background-image: url('../res/cartell.jpg');
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#projecte_info {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+#project-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.6;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+#proj_c {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#proj_c.fade {
+opacity: 0;
+}
+
+@media screen and (max-width: 60rem) and (min-width: 40rem) {
+    #projecte_info {
+        margin: auto;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    #projecte_info {
+        margin: auto;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+}

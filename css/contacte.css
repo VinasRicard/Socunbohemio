@@ -1,0 +1,114 @@
+:root {
+    --main-color: #E8302A;
+    --white: #ffffff; 
+}
+#contacte_c {
+    opacity: 1;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+  }
+
+#contacte_c.fade {
+opacity: 0;
+}
+
+
+#contacte {
+    background-image: url('../res/pluja.jpg');
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#contacte_info {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    text-align: center;
+}
+.contacte {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+.contacte_title {
+    font-size: 20px;
+    margin: 10px;
+}
+.contacte_txt {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: none;
+    font-family: AlteHaasGroteskBold;
+    color: white;
+}
+
+@media screen and (min-width: 60rem) {
+    #contacte {
+        background-position-y: -100px;
+    }
+}
+@media screen and (max-width: 60rem) and (min-width: 40rem) {
+    #contacte_info {
+        margin: 0;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        text-align: center;
+    }
+    .contacte {
+        display: flex;
+        width: fit-content;
+        margin: auto;
+    }
+    .contacte_title {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .contacte_txt {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px;
+        text-decoration: none;
+        font-family: AlteHaasGroteskBold;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    #contacte_info {
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        text-align: center;
+    }
+    .contacte {
+        width: fit-content;
+        margin: auto;
+    }
+    .contacte_title {
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    .contacte_txt {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px;
+        text-decoration: none;
+        font-family: AlteHaasGroteskBold;
+        color: white;
+        padding-bottom: 30px;
+    }
+}
