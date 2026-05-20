@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let page2 = document.getElementById('block2');
-page.className = 'fade';
+page2.className = 'fade';
 document.addEventListener("DOMContentLoaded", () => {
   window.setTimeout(function() {
     page2.classList.remove('fade');
@@ -15,11 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let menu0 = document.getElementById('menu7');
-
 var checkbox0 = document.getElementById('check4');
-
-let lletres = document.getElementById('lletres');
-
 var barras = document.getElementById('barras4');
 
 checkbox0.addEventListener('change', function() {
@@ -27,7 +23,6 @@ checkbox0.addEventListener('change', function() {
     barras.src = "../res/close.png";
     menu0.style.height = "2000px";
     menu0.style.backgroundColor = "rgba(0, 0, 0, 0.92)";
-    lletres.style.overflowY = "hidden";
   } else {
     menu0.style.height = "fit-content";
     menu0.style.backgroundColor = "rgba(0, 0, 0, 0)";

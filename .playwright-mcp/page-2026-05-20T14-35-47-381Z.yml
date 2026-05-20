@@ -1,0 +1,32 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - link "SOCUNBOHEMIO" [ref=e3] [cursor=pointer]:
+      - /url: ../index.html
+    - img [ref=e5]
+  - generic [ref=e6]:
+    - heading "Concerts" [level=2] [ref=e7]
+    - generic [ref=e10]:
+      - paragraph [ref=e11]: 25/02/27
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: CONCERT PRESENTACIÓ (SALA APOLO)
+        - paragraph [ref=e14]: Barcelona
+      - link "Entrades" [ref=e15] [cursor=pointer]:
+        - /url: https://www.ticketmaster.es/event/1389615788?subchannel_id=11938&brand=es_vidafest
+    - generic [ref=e17]:
+      - link [ref=e18] [cursor=pointer]:
+        - /url: https://www.instagram.com/socunbohemio/
+      - link [ref=e19] [cursor=pointer]:
+        - /url: https://twitter.com/socunbohemio?lang=ca
+      - link [ref=e20] [cursor=pointer]:
+        - /url: https://www.youtube.com/channel/UCHTbZCyCvqPXYCTW_Ro0uBg
+      - link [ref=e21] [cursor=pointer]:
+        - /url: https://open.spotify.com/artist/3Zyph9kkkEfTKaMQrLotUV
+      - link [ref=e22] [cursor=pointer]:
+        - /url: https://music.amazon.es/artists/B07H45RSG3/socunbohemio?refMarker=null
+      - link [ref=e23] [cursor=pointer]:
+        - /url: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjR0ICVqdv7AhW4UaQEHaYYBaUQFnoECAwQAQ&url=https%3A%2F%2Fmusic.apple.com%2Fes%2Fartist%2Fsocunbohemio%2F1436806880&usg=AOvVaw3PpxQmUwYYt-cB7rPjRhzf
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - paragraph [ref=e26]: © Socunbohemio, 2023.
+        - paragraph [ref=e28]: Disseny i desenvolupament per Ricard Viñas
+      - img [ref=e29]

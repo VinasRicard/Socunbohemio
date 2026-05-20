@@ -1,0 +1,41 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - link "SOCUNBOHEMIO" [ref=e3] [cursor=pointer]:
+      - /url: ../index.html
+    - link "Sobre el projecte" [ref=e29] [cursor=pointer]:
+      - /url: ../html/sobreelprojecte.html
+    - link "Concerts" [ref=e30] [cursor=pointer]:
+      - /url: ../html/concerts.html
+    - link "Botiga" [ref=e31] [cursor=pointer]:
+      - /url: ../html/botiga.html
+    - link "Lletres i acords" [ref=e32] [cursor=pointer]:
+      - /url: ../html/lletresiacords.html
+    - link "Contacte" [ref=e33] [cursor=pointer]:
+      - /url: ../html/contacte.html
+  - generic [ref=e5]:
+    - heading "Concerts" [level=2] [ref=e6]
+    - generic [ref=e9]:
+      - paragraph [ref=e10]: 25/02/27
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: CONCERT PRESENTACIÓ (SALA APOLO)
+        - paragraph [ref=e13]: Barcelona
+      - link "Entrades" [ref=e14] [cursor=pointer]:
+        - /url: https://www.ticketmaster.es/event/1389615788?subchannel_id=11938&brand=es_vidafest
+    - generic [ref=e16]:
+      - link "Instagram" [ref=e17] [cursor=pointer]:
+        - /url: https://www.instagram.com/socunbohemio/
+      - link "Twitter" [ref=e18] [cursor=pointer]:
+        - /url: https://twitter.com/socunbohemio?lang=ca
+      - link "YouTube" [ref=e19] [cursor=pointer]:
+        - /url: https://www.youtube.com/channel/UCHTbZCyCvqPXYCTW_Ro0uBg
+      - link "Spotify" [ref=e20] [cursor=pointer]:
+        - /url: https://open.spotify.com/artist/3Zyph9kkkEfTKaMQrLotUV
+      - link "Amazon Music" [ref=e21] [cursor=pointer]:
+        - /url: https://music.amazon.es/artists/B07H45RSG3/socunbohemio?refMarker=null
+      - link "Apple Music" [ref=e22] [cursor=pointer]:
+        - /url: https://music.apple.com/es/artist/socunbohemio/1436806880
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: © Socunbohemio, 2026.
+        - paragraph [ref=e27]: Disseny i desenvolupament per Ricard Viñas
+      - img "Vida Records" [ref=e28]
