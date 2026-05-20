@@ -34,3 +34,5 @@ checkbox0.addEventListener('change', function() {
     barras.src = "../res/menu.png";
   }
 });
+
+

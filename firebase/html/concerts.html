@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, height=device-height">
     <title>Concerts | Socunbohemio</title>
-    <meta name="description" content="Entrades i informació dels concerts. CONCERT PRESENTACIÓ EP - SALA APOLO [2] 22.2.24. VALENCIA FLOW FEST 11-12.5.24. VIDA FESTIVAL 5.7.24">
+    <meta name="description" content="Entrades i informació dels concerts. CONCERT PRESENTACIÓ APOLO 25.02.27">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/concerts.css">
     <link rel="icon" href="./res/favicon.jpeg">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3HPPDSQHQ"></script>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -36,28 +38,15 @@
             </nav>
             <div id="block1">
                 <div class="blockConcerts" style="margin-bottom: 55%;">
-                    <div class="concert2">
-                        <p class="concert_date">22/2/24</p>
-                        <div class="concert_info">
-                            <p class="concert_txt">CONCERT PRESENTACIÓ EP /</p><br><p class="concert_place">Apolo [2], Barcelona</p></br>
+                    <div v-for="concert in concerts">
+                        <div class="concert2">
+                            <p class="concert_date">{{ concert.date }}</p>
+                            <div class="concert_info">
+                                <p class="concert_txt">{{ concert.name }} /</p><p class="concert_place">{{ concert.ubi }}</p>
+                            </div>
+                            <a :href="concert.link" :class="concert.sold ? 'ticket_sold' : 'ticket_buy'">{{ concert.sold ? 'SOLD OUT' : 'Entrades' }}</a>
                         </div>
-                        <a href="https://www.festival-millenni.com/concert/socunbohemio/" class="ticket_buy">Entrades</a>
-                    </div>
-                    <div class="line"></div>
-                    <div class="concert2">
-                        <p class="concert_date">11-12/5/24</p>
-                        <div class="concert_info">
-                            <p class="concert_txt">VALENCIA FLOW FEST /</p><p class="concert_place">València</p>
-                        </div>
-                        <a href="https://xceed.me/es/valencia/event/valencia-flow-fest-1--140761" class="ticket_buy">Entrades</a>
-                    </div>
-                    <div class="line"></div>
-                    <div class="concert2">
-                        <p class="concert_date">5/7/24</p>
-                        <div class="concert_info">
-                            <p class="concert_txt">VIDA FESTIVAL /</p><p class="concert_place">Vilanova i la Geltrú</p>
-                        </div>
-                        <a href="https://www.vidafestival.com" class="ticket_buy">Entrades</a>
+                        <div class="line"></div>
                     </div>
                 </div>
                 <div class="bottom">
@@ -93,28 +82,15 @@
             <div id="block2">
                 <h2 style="text-align: center; margin-top: 40px;" id="titulito" >Concerts</h2>
                 <div class="blockConcerts" style="margin-bottom: 55%;">
-                    <div class="concert2">
-                        <p class="concert_date">22/2/24</p>
-                        <div class="concert_info">
-                            <p class="concert_txt">CONCERT PRESENTACIÓ EP - SALA APOLO [2]</p><p class="concert_place">Barcelona</p>
+                    <div v-for="concert in concerts">
+                        <div class="concert2">
+                            <p class="concert_date">{{ concert.date }}</p>
+                            <div class="concert_info">
+                                <p class="concert_txt">{{ concert.name }}</p><p class="concert_place">{{ concert.ubi}}</p>
+                            </div>
+                            <a :href="concert.link" :class="concert.sold ? 'ticket_sold' : 'ticket_buy'">{{ concert.sold ? 'SOLD OUT' : 'Entrades' }}</a>
                         </div>
-                        <a href="https://www.festival-millenni.com/concert/socunbohemio/" class="ticket_buy">Entrades</a>
-                    </div>
-                    <div class="line"></div>
-                    <div class="concert2">
-                        <p class="concert_date">11-12/5/24</p>
-                        <div class="concert_info">
-                            <p class="concert_txt">VALENCIA FLOW FEST</p><p class="concert_place">València</p>
-                        </div>
-                        <a href="https://xceed.me/es/valencia/event/valencia-flow-fest-1--140761" class="ticket_buy">Entrades</a>
-                    </div>
-                    <div class="line"></div>
-                    <div class="concert2">
-                        <p class="concert_date">5/7/24</p>
-                        <div class="concert_info">
-                            <p class="concert_txt">VIDA FESTIVAL</p><p class="concert_place">Vilanova i la Geltrú</p>
-                        </div>
-                        <a href="https://www.vidafestival.com" class="ticket_buy">Entrades</a>
+                        <div class="line"></div>
                     </div>
                 </div>
                 <div class="socialmedia">
@@ -136,5 +112,31 @@
             <script src="../js/concerts2.js"></script>
         </div>
     </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    // concerts: [
+                    //     {
+                    //         name: 'FINAL DE GIRA - SALA APOLO',
+                    //         date: '20/2/25',
+                    //         link: 'https://www.ticketmaster.es/event/40961?subchannel_id=11938&brand=es_vidafest&fbclid=PAZXh0bgNhZW0CMTEAAabLASJFG2w3KLcQr6SWLelxOgY_MBbFgSRVFXuiIWHzvj8egG5D6S3TctQ_aem_ZmFrZWR1bW15MTZieXRlcw',
+                    //         ubi: 'Barcelona'
+                    //     },
+                    // ]
+                    concerts: [
+                        {
+                            name: 'CONCERT PRESENTACIÓ (SALA APOLO)',
+                            date: '25/02/27',
+                            link: 'https://www.ticketmaster.es/event/1389615788?subchannel_id=11938&brand=es_vidafest',
+                            ubi: 'Barcelona'
+                        },
+                        
+                    ]
+                }
+            }
+            })
+        const mountedApp = app.mount('#concerts2')
+    </script>
 </body>
 </html>

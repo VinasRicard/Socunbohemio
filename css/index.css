@@ -16,11 +16,11 @@ opacity: 0;
     background-image: url('../res/grup-horitzontal.jpg');
     overflow-x: hidden;
     overflow-y: hidden;
-    background-position: left;
+    background-position: center;
 }
 #home-overlay {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 150%;
     background-color: black;
     position: absolute;
     opacity: 0.5;
@@ -105,5 +105,11 @@ opacity: 0;
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .bottom {
+        position: fixed;
+    }
+    .socialmedia {
+        position: fixed;
     }
 }

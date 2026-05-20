@@ -95,6 +95,7 @@ opacity: 0;
     .contacte {
         width: fit-content;
         margin: auto;
+        display: contents;
     }
     .contacte_title {
         font-size: 20px;
