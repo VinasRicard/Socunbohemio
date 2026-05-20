@@ -1,0 +1,42 @@
+- generic [active]:
+  - generic:
+    - generic [ref=e1]:
+      - navigation [ref=e2]:
+        - link "SOCUNBOHEMIO" [ref=e3] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Sobre el projecte" [ref=e4] [cursor=pointer]:
+          - /url: ../html/sobreelprojecte.html
+        - link "Concerts" [ref=e5] [cursor=pointer]:
+          - /url: ../html/concerts.html
+        - link "Botiga" [ref=e6] [cursor=pointer]:
+          - /url: ../html/botiga.html
+        - link "Lletres i acords" [ref=e7] [cursor=pointer]:
+          - /url: ../html/lletresiacords.html
+        - link "Contacte" [ref=e8] [cursor=pointer]:
+          - /url: ../html/contacte.html
+      - generic [ref=e9]:
+        - generic [ref=e12]:
+          - paragraph [ref=e13]: 25/02/27
+          - generic [ref=e14]:
+            - paragraph [ref=e15]: CONCERT PRESENTACIÓ (SALA APOLO) /
+            - paragraph [ref=e16]: Barcelona
+          - link "Entrades" [ref=e17] [cursor=pointer]:
+            - /url: https://www.ticketmaster.es/event/1389615788?subchannel_id=11938&brand=es_vidafest
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - paragraph [ref=e21]: © Socunbohemio, 2023.
+            - paragraph [ref=e23]: Disseny i desenvolupament per Ricard Viñas
+          - img [ref=e24]
+    - generic [ref=e25]:
+      - link [ref=e26] [cursor=pointer]:
+        - /url: https://www.instagram.com/socunbohemio/
+      - link [ref=e27] [cursor=pointer]:
+        - /url: https://twitter.com/socunbohemio?lang=ca
+      - link [ref=e28] [cursor=pointer]:
+        - /url: https://www.youtube.com/channel/UCHTbZCyCvqPXYCTW_Ro0uBg
+      - link [ref=e29] [cursor=pointer]:
+        - /url: https://open.spotify.com/artist/3Zyph9kkkEfTKaMQrLotUV
+      - link [ref=e30] [cursor=pointer]:
+        - /url: https://music.amazon.es/artists/B07H45RSG3/socunbohemio?refMarker=null
+      - link [ref=e31] [cursor=pointer]:
+        - /url: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjR0ICVqdv7AhW4UaQEHaYYBaUQFnoECAwQAQ&url=https%3A%2F%2Fmusic.apple.com%2Fes%2Fartist%2Fsocunbohemio%2F1436806880&usg=AOvVaw3PpxQmUwYYt-cB7rPjRhzf
