@@ -1,0 +1,38 @@
+- generic [active]:
+  - generic:
+    - generic:
+      - link "Escolta \"Un lloc\"" [ref=e2] [cursor=pointer]:
+        - /url: https://orcd.co/47bxjbg
+        - heading "Escolta \"Un lloc\"" [level=2] [ref=e3]
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - paragraph [ref=e6]: © Socunbohemio, 2026.
+          - paragraph [ref=e8]: Disseny i desenvolupament per Ricard Viñas
+        - img "Vida Records" [ref=e9]
+      - generic [ref=e10]:
+        - link "Instagram" [ref=e11] [cursor=pointer]:
+          - /url: https://www.instagram.com/socunbohemio/
+        - link "Twitter" [ref=e12] [cursor=pointer]:
+          - /url: https://twitter.com/socunbohemio?lang=ca
+        - link "YouTube" [ref=e13] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCHTbZCyCvqPXYCTW_Ro0uBg
+        - link "Spotify" [ref=e14] [cursor=pointer]:
+          - /url: https://open.spotify.com/artist/3Zyph9kkkEfTKaMQrLotUV
+        - link "Amazon Music" [ref=e15] [cursor=pointer]:
+          - /url: https://music.amazon.es/artists/B07H45RSG3/socunbohemio?refMarker=null
+        - link "Apple Music" [ref=e16] [cursor=pointer]:
+          - /url: https://music.apple.com/es/artist/socunbohemio/1436806880
+    - navigation [ref=e17]:
+      - link "SOCUNBOHEMIO" [ref=e18] [cursor=pointer]:
+        - /url: index.html
+        - heading "SOCUNBOHEMIO" [level=1] [ref=e19]
+      - link "Sobre el projecte" [ref=e20] [cursor=pointer]:
+        - /url: html/sobreelprojecte.html
+      - link "Concerts" [ref=e21] [cursor=pointer]:
+        - /url: html/concerts.html
+      - link "Botiga" [ref=e22] [cursor=pointer]:
+        - /url: html/botiga.html
+      - link "Lletres i acords" [ref=e23] [cursor=pointer]:
+        - /url: html/lletresiacords.html
+      - link "Contacte" [ref=e24] [cursor=pointer]:
+        - /url: html/contacte.html

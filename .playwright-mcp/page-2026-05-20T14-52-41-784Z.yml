@@ -1,0 +1,107 @@
+- generic [active]:
+  - generic:
+    - generic [ref=e1]:
+      - generic [ref=e3]:
+        - link "SOCUNBOHEMIO" [ref=e4] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Sobre el projecte" [ref=e5] [cursor=pointer]:
+          - /url: sobreelprojecte.html
+        - link "Concerts" [ref=e6] [cursor=pointer]:
+          - /url: concerts.html
+        - link "Botiga" [ref=e7] [cursor=pointer]:
+          - /url: botiga.html
+        - link "Lletres i acords" [ref=e8] [cursor=pointer]:
+          - /url: lletresiacords.html
+        - link "Contacte" [ref=e9] [cursor=pointer]:
+          - /url: contacte.html
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - heading "Contes de les Quatre Estacions" [level=3] [ref=e12]
+          - generic [ref=e13]:
+            - link "download" [ref=e14] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/17ELpM54EDx08tv6wOdFoAdelNUwFVTgQ/view?usp=sharing
+            - paragraph [ref=e15]: Conte d'hivern
+          - generic [ref=e16]:
+            - link "download" [ref=e17] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1Xw41jiXX6JtQKHBswrPmmrT6-wNPY3qc/view?usp=share_link
+            - paragraph [ref=e18]: Conte de tardor
+          - generic [ref=e19]:
+            - link "download" [ref=e20] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/15e5fMX5ss-dk0lbtlU5QKOFsWTOy8YtR/view?usp=share_link
+            - paragraph [ref=e21]: Conte d'estiu
+          - generic [ref=e22]:
+            - link "download" [ref=e23] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1ZfzZHasFNHD-Xlw3pxJZa8OAqWV5KJnY/view?usp=share_link
+            - paragraph [ref=e24]: Conte de primavera
+          - generic [ref=e25]:
+            - link "download" [ref=e26] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1o7E3xQIgWSB2cYSYzuUi5xEQG7kp4gmU/view?usp=sharing
+            - paragraph [ref=e27]: El conte que mai s'acaba
+          - generic [ref=e28]:
+            - link "download" [ref=e29] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/15a-moyzXAAmA64a4IXsHZL7VzmftGTGV/view?usp=sharing
+            - paragraph [ref=e30]: Ses paraules s'emporta el vent
+        - generic [ref=e31]:
+          - heading "Les coses que no et diré mai" [level=3] [ref=e32]
+          - generic [ref=e33]:
+            - link "download" [ref=e34] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1nq3ndX1l2E6t5JXqz4P1PBGkJKgojhjk/view?usp=share_link
+            - paragraph [ref=e35]: Júlia
+          - generic [ref=e36]:
+            - link "download" [ref=e37] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1Al9nPKYEF4BDQXKTK1XolVQu1dajwVIS/view?usp=share_link
+            - paragraph [ref=e38]: Als nostres amants
+          - generic [ref=e39]:
+            - link "download" [ref=e40] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1ZKIvZ0maKjC1eT6oZNb-lpOdoHhK7WrO/view?usp=share_link
+            - paragraph [ref=e41]: Nouvelle Vague
+          - generic [ref=e42]:
+            - link "download" [ref=e43] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1aLVm1injgVmr4a7uuHz3-UTZqxEHt21i/view?usp=share_link
+            - paragraph [ref=e44]: La cançó
+          - generic [ref=e45]:
+            - link "download" [ref=e46] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1alJqg7NuYtFiTVjPjJC3EKEa7TlxFR7v/view?usp=share_link
+            - paragraph [ref=e47]: Nous sommes la réalité
+        - generic [ref=e48]:
+          - heading "Quan de cop ve la fosca" [level=3] [ref=e49]
+          - generic [ref=e50]:
+            - link "download" [ref=e51] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1xaG8GSznw4fWGqLLWDbKgigZSvJ7REFs/view?usp=share_link
+            - paragraph [ref=e52]: "Quan de cop ve la fosca: Part I"
+          - generic [ref=e53]:
+            - link "download" [ref=e54] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1-x8uROiZ3AkfDRr9mAfOOmJiJxKxSdFm/view?usp=share_link
+            - paragraph [ref=e55]: "Quan de cop ve la fosca: Part II"
+          - generic [ref=e56]:
+            - link "download" [ref=e57] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1Th8fI74Wf-Yp-ofhCJTc7QsEZGYkXsKT/view?usp=share_link
+            - paragraph [ref=e58]: "Quan de cop ve la fosca: Part III"
+        - generic [ref=e59]:
+          - heading "La mateixa sang" [level=3] [ref=e60]
+          - generic [ref=e61]:
+            - link "download" [ref=e62] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/15YR5qtlMXbDrRMUxQ-9OG4A_8e8-vNl4/view?usp=share_link
+            - paragraph [ref=e63]: La mateixa sang
+          - generic [ref=e64]:
+            - link "download" [ref=e65] [cursor=pointer]:
+              - /url: https://drive.google.com/file/d/1HcUK6Nj5Ct-vdX8FKzoXZhZf_eo_ROS0/view?usp=share_link
+            - paragraph [ref=e66]: En temps de guerra
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - paragraph [ref=e69]: © Socunbohemio, 2026.
+          - paragraph [ref=e71]: Disseny i desenvolupament per Ricard Viñas
+        - img "Vida Records" [ref=e72]
+    - generic [ref=e73]:
+      - link "Instagram" [ref=e74] [cursor=pointer]:
+        - /url: https://www.instagram.com/socunbohemio/
+      - link "Twitter" [ref=e75] [cursor=pointer]:
+        - /url: https://twitter.com/socunbohemio?lang=ca
+      - link "YouTube" [ref=e76] [cursor=pointer]:
+        - /url: https://www.youtube.com/channel/UCHTbZCyCvqPXYCTW_Ro0uBg
+      - link "Spotify" [ref=e77] [cursor=pointer]:
+        - /url: https://open.spotify.com/artist/3Zyph9kkkEfTKaMQrLotUV
+      - link "Amazon Music" [ref=e78] [cursor=pointer]:
+        - /url: https://music.amazon.es/artists/B07H45RSG3/socunbohemio?refMarker=null
+      - link "Apple Music" [ref=e79] [cursor=pointer]:
+        - /url: https://music.apple.com/es/artist/socunbohemio/1436806880

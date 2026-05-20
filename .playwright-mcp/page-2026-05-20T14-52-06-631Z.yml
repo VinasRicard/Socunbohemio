@@ -1,0 +1,40 @@
+- generic [ref=e1]:
+  - generic:
+    - generic [ref=e3]:
+      - link "Discs i vinils" [ref=e4] [cursor=pointer]:
+        - /url: https://www.vidafestival.com/shop/contes-de-les-quatre-estacions-by-socunbohemio/
+      - link "Roba" [ref=e5] [cursor=pointer]:
+        - /url: https://elsdiesdesol.bigcartel.com/category/socunbohemio
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - paragraph [ref=e8]: © Socunbohemio, 2026.
+        - paragraph [ref=e10]: Disseny i desenvolupament per Ricard Viñas
+      - link "Vida Records" [ref=e11] [cursor=pointer]:
+        - /url: https://www.es.vidafestival.com/vida-records
+        - img "Vida Records" [ref=e12]
+    - generic [ref=e13]:
+      - link "Instagram" [ref=e14] [cursor=pointer]:
+        - /url: https://www.instagram.com/socunbohemio/
+      - link "Twitter" [ref=e15] [cursor=pointer]:
+        - /url: https://twitter.com/socunbohemio?lang=ca
+      - link "YouTube" [ref=e16] [cursor=pointer]:
+        - /url: https://www.youtube.com/channel/UCHTbZCyCvqPXYCTW_Ro0uBg
+      - link "Spotify" [ref=e17] [cursor=pointer]:
+        - /url: https://open.spotify.com/artist/3Zyph9kkkEfTKaMQrLotUV
+      - link "Amazon Music" [ref=e18] [cursor=pointer]:
+        - /url: https://music.amazon.es/artists/B07H45RSG3/socunbohemio?refMarker=null
+      - link "Apple Music" [ref=e19] [cursor=pointer]:
+        - /url: https://music.apple.com/es/artist/socunbohemio/1436806880
+  - navigation [ref=e20]:
+    - link "SOCUNBOHEMIO" [ref=e21] [cursor=pointer]:
+      - /url: ../index.html
+    - link "Sobre el projecte" [ref=e22] [cursor=pointer]:
+      - /url: ../html/sobreelprojecte.html
+    - link "Concerts" [ref=e23] [cursor=pointer]:
+      - /url: ../html/concerts.html
+    - link "Botiga" [ref=e24] [cursor=pointer]:
+      - /url: ../html/botiga.html
+    - link "Lletres i acords" [ref=e25] [cursor=pointer]:
+      - /url: ../html/lletresiacords.html
+    - link "Contacte" [ref=e26] [cursor=pointer]:
+      - /url: ../html/contacte.html
