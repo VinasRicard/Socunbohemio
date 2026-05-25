@@ -1,31 +1,24 @@
 :root {
     --main-color: #E8302A;
-    --white: #ffffff; 
-}
-
-#home_c {
-    opacity: 1;
-    transition-duration: 1.7s;
-    transition-property: opacity;
-}
-#home_c.fade {
-opacity: 0;
+    --white: #ffffff;
 }
 
 #home {
-    background-image: url('../res/grup-horitzontal.jpg');
+    background-image: url('../res/grup-horitzontal.webp');
     overflow-x: hidden;
     overflow-y: hidden;
     background-position: center;
 }
 #home-overlay {
-    width: 110%;
-    height: 150%;
+    width: 100%;
+    height: 100%;
     background-color: black;
     position: absolute;
     opacity: 0.5;
     margin: 0;
     left: 0;
+    top: 0;
+    z-index: -1;
 }
 .add_title:hover {
     color: var(--main-color);
@@ -46,7 +39,6 @@ opacity: 0;
         margin-bottom: 17%;
     }
     .add_title {
-        size: 50px;
         color: white;
         font-family: AlteHaasGroteskBold, 'Karla', sans-serif;
         font-size: 35px;
@@ -70,7 +62,6 @@ opacity: 0;
         margin-bottom: 40%;
     }
     .add_title {
-        size: 50px;
         color: white;
         font-size: 35px;
         margin: auto;
@@ -80,9 +71,15 @@ opacity: 0;
     }
 }
 
+@media screen and (max-width: 60rem) and (min-width: 40rem) {
+    #home {
+        background-image: url('../res/grup-horitzontal-sm.webp');
+    }
+}
+
 @media screen and (max-width: 40rem) {
     #home {
-        background-image: url('../res/grup-vertical.jpg');
+        background-image: url('../res/grup-vertical.webp');
     }
     .add_container {
         width: 100%;
@@ -98,7 +95,6 @@ opacity: 0;
         margin-bottom: 40%;
     }
     .add_title {
-        size: 50px;
         color: white;
         font-size: 35px;
         margin: auto;

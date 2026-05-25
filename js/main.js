@@ -1,30 +1,25 @@
-
-let cont = document.getElementById('home_c');
-cont.className = 'fade';
-document.addEventListener("DOMContentLoaded", () => {
-  window.setTimeout(function() {
-    cont.classList.remove('fade');
-  }, 230);
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.fade-target.fade').forEach((el) => {
+        window.setTimeout(() => el.classList.remove('fade'), 230);
+    });
 });
 
-let menu0 = document.getElementById('menu0');
-
-var checkbox0 = document.getElementById('check0');
-
-var barras = document.getElementById('barras0');
-
-checkbox0.addEventListener('change', function() {
-  if (this.checked) {
-    menu0.style.height = "100%";
-    menu0.style.backgroundColor = "rgba(0, 0, 0, 0.92)";
-    barras.src = "res/close.png";
-  } else {
-    menu0.style.height = "fit-content";
-    menu0.style.backgroundColor = "rgba(0, 0, 0, 0)";
-    barras.src = "res/menu.png";
-  }
+document.addEventListener('change', (e) => {
+    const check = e.target;
+    if (!(check instanceof HTMLInputElement) || !check.classList.contains('check')) return;
+    const menu = check.closest('.menu, .menu2');
+    if (!menu) return;
+    const open = check.checked;
+    menu.classList.toggle('is-open', open);
+    check.setAttribute('aria-expanded', String(open));
+    const barras = menu.querySelector('.barras');
+    if (barras) {
+        const src = barras.getAttribute('src') || '';
+        barras.setAttribute(
+            'src',
+            open
+                ? src.replace(/menu\.svg(\?.*)?$/, 'close.svg$1')
+                : src.replace(/close\.svg(\?.*)?$/, 'menu.svg$1')
+        );
+    }
 });
-
-
-
-
