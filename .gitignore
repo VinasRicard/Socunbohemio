@@ -10,6 +10,25 @@ firebase-debug.*.log*
 # Firebase cache
 .firebase/
 
+# macOS
+.DS_Store
+
+# Playwright MCP cache (local dev only)
+.playwright-mcp/
+
+# Local screenshots from dev/QA sessions
+*-passA.jpeg
+*-passB.jpeg
+*-passC.jpeg
+concerts-*.jpeg
+concerts-*.png
+home-desktop.jpeg
+home-mobile.jpeg
+sobre-desktop.jpeg
+sobre-mobile.jpeg
+lletres-desktop.jpeg
+lletres-mobile.jpeg
+
 # Firebase config
 
 # Uncomment this if you'd like others to create their own Firebase project.

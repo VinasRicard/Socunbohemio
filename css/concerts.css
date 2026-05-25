@@ -1,19 +1,10 @@
 :root {
     --main-color: #E8302A;
-    --white: #ffffff; 
+    --white: #ffffff;
 }
 
-#concerts_c {
-    opacity: 1;
-    transition-duration: 1.7s;
-    transition-property: opacity;
-  }
-
-#concerts_c.fade {
-opacity: 0;
-}
 #concerts {
-    background-image: url('../micro.jpg');
+    background-image: url('../res/micro.webp');
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -51,7 +42,7 @@ opacity: 0;
     
     /* Concerts2 */
     #concerts2 {
-        background-image: url('../res/micro.jpg');
+        background-image: url('../res/micro.webp');
         overflow-x: hidden;
         overflow-y: scroll;
         height: fit-content;
@@ -215,7 +206,7 @@ opacity: 0;
 
     /* Concerts2 */
     #concerts2 {
-        background-image: url('../res/micro.jpg');
+        background-image: url('../res/micro-sm.webp');
         overflow-x: hidden;
         overflow-y: scroll;
         height: fit-content;
@@ -321,7 +312,7 @@ opacity: 0;
 
     /* Concerts2 */
     #concerts2 {
-        background-image: url('../res/micro.jpg');
+        background-image: url('../res/micro-sm.webp');
         overflow-x: hidden;
         overflow-y: scroll;
         height: fit-content;
