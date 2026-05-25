@@ -1,26 +1,43 @@
-
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Karla:wght@400;700&family=Merriweather&family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Merriweather&family=Reenie+Beanie&display=swap');
 @font-face {
     font-family: AlteHaasGroteskBold;
-    src: url(../fonts/AlteHaasGroteskBold.ttf);
+    src: url(../fonts/AlteHaasGroteskBold.woff2) format('woff2');
+    font-display: swap;
 }
 @font-face {
     font-family: AlteHaasGroteskRegular;
-    src: url(../fonts/AlteHaasGroteskRegular.ttf);
-}
-@font-face {
-    font-family: HeyTinyBold;
-    src: url(../fonts/HeyTinyBold.ttf);
-}
-@font-face {
-    font-family: HeyTinyThin;
-    src: url(../fonts/HeyTinyThin.ttf);
+    src: url(../fonts/AlteHaasGroteskRegular.woff2) format('woff2');
+    font-display: swap;
 }
 
 :root {
     --main-color: #E8302A;
-    --white: #ffffff; 
+    --white: #ffffff;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+h2, h3 {
+    color: white;
+    font-size: 28px;
+    font-family: AlteHaasGroteskBold;
 }
 
 .line {
@@ -29,928 +46,270 @@
     width: 100%;
 }
 
+.page {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.fade-target {
+    opacity: 1;
+    transition: opacity 1.7s;
+}
+.fade-target.fade {
+    opacity: 0;
+}
+
+.opacity {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    background-size: 100%;
+    opacity: 30%;
+    overflow-y: hidden;
+    margin-right: 0;
+    top: 0;
+    left: 0;
+}
+.opacity2 {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 30%;
+}
+
+/* Menu */
+.menu, .menu2 {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 0;
+}
+.menu {
+    position: fixed;
+    top: 0;
+}
+.title {
+    font-family: 'Karla', 'Merriweather', serif;
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.menu_tab, .menu_tab_home {
+    text-decoration: none;
+    font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
+    margin: auto;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.menu_tab { font-size: 32px; }
+.menu_tab_home { font-size: 28px; }
+.menu_tab:hover { color: black; }
+.menu_tab_home:hover { color: white; }
+
+.check { display: none; }
+.barras { width: 40px; height: 40px; }
+
+/* Bottom */
+.bottom, .bottom2 {
+    bottom: 0;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    padding-bottom: 15px;
+}
+.bottom { position: absolute; }
+.bottom2 { margin-top: 80px; }
+.bottom3 {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+.credits {
+    float: left;
+    margin-left: 20px;
+}
+.vida {
+    position: relative;
+    float: right;
+    height: 40px;
+    margin: auto;
+    margin-right: 25px;
+}
+.credits_txt {
+    margin: 0;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding-right: 5px;
+}
+.copyright { display: flex; }
+
+/* Social media buttons */
+.instagrambtn,
+.twitterbtn,
+.youtubebtn,
+.spotifybtn,
+.amazonbtn,
+.applebtn {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.instagrambtn { background-image: url("../res/instagram_green.png"); }
+.instagrambtn:hover { background-image: url("../res/instagram_red.png"); }
+.twitterbtn { background-image: url("../res/twitter_green.png"); }
+.twitterbtn:hover { background-image: url("../res/twitter_red.png"); }
+.youtubebtn { background-image: url("../res/youtube_green.png"); }
+.youtubebtn:hover { background-image: url("../res/youtube_red.png"); }
+.spotifybtn { background-image: url("../res/spotify_green.png"); }
+.spotifybtn:hover { background-image: url("../res/spotify_red.png"); }
+.amazonbtn { background-image: url("../res/prime_green.png"); }
+.amazonbtn:hover { background-image: url("../res/prime_red.png"); }
+.applebtn { background-image: url("../res/apple_green.png"); }
+.applebtn:hover { background-image: url("../res/apple_red.png"); }
+
+
 @media screen and (min-width: 60rem) {
-
-    /* General */
-    body {
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
-        background-size: cover;
-        background-position: center; 
-        background-color: black;
-    }
-    p {
-        font-family: 'Karla', sans-serif;
-        color: white;
-        text-align: justify;
-    }
-    .page {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-    }
-    h3 {
-        color: white;
-        font-size: 28px;
-        font-family: AlteHaasGroteskBold;
-    }
-    h2 {
-        color: white;
-        font-size: 28px;
-        font-family: AlteHaasGroteskBold;
-    }
-    .opacity {
-        content: "";
-        width: 110%;
-        height: 100%;
-        position: fixed;
-        background-color: black;
-        background-size: 100%;
-        opacity: 30%;
-        overflow-y: hidden;
-        overflow-y: hidden;
-        margin-right: 0px;
-        top: 0px;
-        left: 0px;
-    }
-    .opacity2 {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-color: black;
-        opacity: 30%;
-    }
-    
-
-    /* Menu */
-    .menu {
-        width: 100%;
+    .menu, .menu2 {
         height: fit-content;
-        position: fixed;
-        top: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        left: 0px;
-        display: flex;
-    }
-    .menu2 {
-        width: 100%;
-        height: fit-content;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        left: 0px;
         display: flex;
     }
     .title {
-        font-family: 'Karla', 'Merriweather', serif;
+        margin: auto;
         margin-left: 20px;
         font-size: 30px;
         margin-right: 25px;
-        text-decoration: none;
-        margin: auto;
-        color: var(--main-color);
-        font-weight: bold;
     }
-    .menu_tab {
-        text-decoration: none;
-        font-size: 32px;
-        font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
-        margin: auto;
-        color: #E8302A;
-        font-weight: bold;
-    }
-    .menu_tab_home {
-        text-decoration: none;
-        font-size: 28px;
-        font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
-        margin: auto;
-        color: var(--main-color);
-        font-weight: bold;
-    }
-    .menu_tab:hover {
-        margin: auto;
-        color: black;
-    }
-    .menu_tab_home:hover {
-        margin: auto;
-        color: white;
-    }
-    .check, .check::before, .check::after {
-        width: 40px;
-        height: 40px;
+    .menu_tab, .menu_tab_home { margin: auto; }
+    .checker { display: none; }
+    .socialmedia, .socialmedia2 {
         position: absolute;
-        right: 0px;
+        display: grid;
+        width: fit-content;
+        height: 300px;
+        margin: auto;
+        top: 30%;
+        right: 30px;
+    }
+    .socialmedia2 { position: fixed; }
+}
+
+
+@media screen and (max-width: 60rem) {
+    .menu.is-open, .menu2.is-open {
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: auto;
+    }
+    #sp { margin-top: 80px; }
+    .title {
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .menu_tab, .menu_tab_home {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+        font-size: 32px;
+    }
+    .menu_tab { display: block; }
+    .menu_tab_home { padding-top: 40px; display: none; }
+    .menu.is-open .menu_tab,
+    .menu2.is-open .menu_tab,
+    .menu.is-open .menu_tab_home,
+    .menu2.is-open .menu_tab_home { display: block; }
+    .checker {
+        position: absolute;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+    .credits {
+        height: fit-content;
         margin-top: auto;
         margin-bottom: auto;
-        background-color: blue;
-        display: none;
     }
-    .checker {
-        display: none;
-    }
-
-
-    /* Bottom */
-    .bottom {
-        position: absolute;
-        bottom: 0px;
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        padding-bottom: 15px;
-    }
-    .bottom2 {
-        bottom: 0px;
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        padding-bottom: 15px;
-        margin-top: 80px;
-    }
-    .credits{
-        float: left;
-        margin-left: 20px;
-    }
-    .vida{
-        position: relative;
-        float: right;
-        height: 40px;
-        margin: auto;
-        margin-right: 25px;
-    }
-    .credits_txt {
-        margin: 0px;
-        font-size: 12px;
-        text-decoration: none;
-        font-family:'Karla', sans-serif;
-        color: white;
-        padding-right: 5px;
-    }
-    .copyright {
-        display: flex;
-    }
-
-    /* Social media */
-    .socialmedia {
-        position: absolute;
+    .socialmedia, .socialmedia2, .socialmedia3 {
         display: grid;
         width: fit-content;
-        height: 300px;
-        margin: auto;
-        top: 30%;
-        right: 30px;
-    }
-    .socialmedia2 {
-        position: fixed;
-        display: grid;
-        width: fit-content;
-        height: 300px;
-        margin: auto;
-        top: 30%;
-        right: 30px;
-    }
-    .instagrambtn {
-        background: url("../res/instagram_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .instagrambtn:hover{
-        background: url("../res/instagram_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .twitterbtn {
-        background: url("../res/twitter_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .twitterbtn:hover{
-        background: url("../res/twitter_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .spotifybtn {
-        background: url("../res/spotify_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .spotifybtn:hover{
-        background: url("../res/spotify_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .applebtn {
-        background: url("../res/apple_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .applebtn:hover{
-        background: url("../res/apple_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .amazonbtn {
-        background: url("../res/prime_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .amazonbtn:hover{
-        background: url("../res/prime_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .youtubebtn {
-        background: url("../res/youtube_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .youtubebtn:hover{
-        background: url("../res/youtube_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
 
 @media screen and (max-width: 60rem) and (min-width: 40rem) {
-    /* Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Karla:wght@400;700&family=Merriweather&family=Reenie+Beanie&display=swap');
-    @font-face {
-        font-family: AlteHaasGroteskBold;
-        src: url(../fonts/AlteHaasGroteskBold.ttf);
-    }
-    @font-face {
-        font-family: AlteHaasGroteskRegular;
-        src: url(../fonts/AlteHaasGroteskRegular.ttf);
-    }
-    @font-face {
-        font-family: HeyTinyBold;
-        src: url(../fonts/HeyTinyBold.ttf);
-    }
-    @font-face {
-        font-family: HeyTinyThin;
-        src: url(../fonts/HeyTinyThin.ttf);
-    }
-
-    /* General */
-    body {
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
-        background-size: cover;
-        background-position: center; 
-        background-color: black;
-    }
-    .page {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-    }
-    p {
-        font-family: 'Karla', sans-serif;
-        color: white;
-        text-align: justify;
-    }
-    h3 {
-        color: white;
-        font-size: 28px;
-        font-family: AlteHaasGroteskBold;
-    }
-    h2 {
-        color: white;
-        font-size: 28px;
-        font-family: AlteHaasGroteskBold;
-    }
-    .container {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        margin: auto;
-    }
-    .opacity {
-        content: "";
-        width: 110%;
-        height: 100%;
-        position: fixed;
-        background-color: black;
-        background-size: 100%;
-        opacity: 30%;
-        overflow-y: hidden;
-        overflow-y: hidden;
-        margin-right: 0px;
-        top: 0px;
-        left: 0px;
-    }
-    .opacity2 {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-color: black;
-        opacity: 30%;
-    }
-    /* Menu */
-    .menu {
-        width: 100%;
-        position: fixed;
-        top: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        left: 0px;
-    }
-    .menu2 {
-        width: 100%;
-        height: fit-content;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        left: 0px;
-    }
-    #sp {
-        margin-top: 80px;
-    }
-    .title {
-        position: absolute;
-        width: 100%;
-        font-family: 'Karla', 'Merriweather', serif;
-        font-size: 30px;
-        text-decoration: none;
-        color: #E8302A;
-        font-weight: bold;
-        margin: auto;
-        text-align: center;
-    }
-    .menu_tab {
-        text-decoration: none;
-        font-size: 32px;
-        font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
-        margin: auto;
-        color: #E8302A;
-        font-weight: bold;
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        text-align: center;
-        height: fit-content;
-    }
-    .menu input:checked ~ .menu_tab { display: block; }
-    .menu input:checked ~ .menu_tab { height: 100%; background-color: aqua; }
-    .menu_tab_home {
-        text-decoration: none;
-        padding-top: 40px;
-        font-size: 32px;
-        font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
-        margin: auto;
-        color: #E8302A;
-        font-weight: bold;
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        text-align: center;
-        height: fit-content;
-    }
-    .menu_tab_home {display: none;}
-    .menu input:checked ~ .menu_tab_home { display: block; }
-    .menu2 input:checked ~ .menu_tab_home { display: block; }
-    .menu_tab:hover {
-        margin: auto;
-        color: black;
-    }
-    .menu_tab_home:hover {
-        margin: auto;
-        color: white;
-    }
-    .check {
-        display: none;
-    }
+    .title { font-size: 30px; }
     .checker {
         width: 40px;
         height: 40px;
-        position: absolute;
         right: 25px;
-        margin-top: auto;
-        margin-bottom: auto;
-        background-image: url(/res/menu.png);
-        background-position: left center;
         background-size: 40px 40px;
-        background-repeat: no-repeat;
     }
-    .barras {
-        width: 40px;
-        height: 40px;
-    }
-
-    /* Bottom */
-    .bottom {
-        position: absolute;
-        bottom: 0px;
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        padding-bottom: 15px;
-    }
-    .bottom2 {
-        bottom: 0px;
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        padding-bottom: 15px;
-        margin-top: 40px;
-    }
-    .bottom3 {
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        margin-top: 40px;
-    }
-    .credits{
-        float: left;
-        margin-left: 20px;
-        height: fit-content;
-        margin-top: auto;
-        margin-bottom: auto
-    }
-    .vida{
-        position: relative;
-        float: right;
-        height: 40px;
-        margin: auto;
-        margin-right: 25px;
-    }
-    .credits_txt {
-        margin: 0px;
-        font-size: 12px;
-        text-decoration: none;
-        font-family:'Karla', sans-serif;
-        color: white;
-        padding-right: 5px;
-    }
-    .copyright {
-        display: flex;
-    }
-
-    /* Social media */
-    .socialmedia {
-        position: absolute;
-        display: grid;
+    .bottom2 { margin-top: 40px; }
+    .socialmedia, .socialmedia2, .socialmedia3 {
         grid-template-columns: 50px 50px 50px 50px 50px 50px;
-        width: fit-content;
-        bottom: 0px;
-        left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
-        margin-bottom: 12%;
     }
-    .socialmedia2 {
-        display: grid;
-        grid-template-columns: 50px 50px 50px 50px 50px 50px;
-        width: fit-content;
-        left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: 30px;
-    }
-    .socialmedia3 {
-        display: grid;
-        grid-template-columns: 50px 50px 50px 50px 50px 50px;
-        width: fit-content;
-        left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: 20px;
-    }
-    .instagrambtn {
-        background: url("../res/instagram_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .instagrambtn:hover{
-        background: url("../res/instagram_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .twitterbtn {
-        background: url("../res/twitter_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .twitterbtn:hover{
-        background: url("../res/twitter_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .spotifybtn {
-        background: url("../res/spotify_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .spotifybtn:hover{
-        background: url("../res/spotify_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .applebtn {
-        background: url("../res/apple_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .applebtn:hover{
-        background: url("../res/apple_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .amazonbtn {
-        background: url("../res/prime_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .amazonbtn:hover{
-        background: url("../res/prime_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-    .youtubebtn {
-        background: url("../res/youtube_green.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-        margin: auto;
-    }
-    .youtubebtn:hover{
-        background: url("../res/youtube_red.png") no-repeat;
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
-    }
-
+    .socialmedia { position: absolute; bottom: 0; margin-bottom: 12%; }
+    .socialmedia2 { margin-top: 30px; }
+    .socialmedia3 { margin-top: 20px; }
 }
 
+
 @media screen and (max-width: 40rem) {
-    /* Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Karla:wght@400;700&family=Merriweather&family=Reenie+Beanie&display=swap');
-    @font-face {
-        font-family: AlteHaasGroteskBold;
-        src: url(../fonts/AlteHaasGroteskBold.ttf);
-    }
-    @font-face {
-        font-family: AlteHaasGroteskRegular;
-        src: url(../fonts/AlteHaasGroteskRegular.ttf);
-    }
-    @font-face {
-        font-family: HeyTinyBold;
-        src: url(../fonts/HeyTinyBold.ttf);
-    }
-    @font-face {
-        font-family: HeyTinyThin;
-        src: url(../fonts/HeyTinyThin.ttf);
-    }
-
-    /* General */
-    body {
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
-        background-size: cover;
-        background-position: center; 
-        background-color: black;
-    }
-    .page {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-    }
-    p {
-        font-family: 'Karla', sans-serif;
-        color: white;
-        text-align: justify;
-    }
-    h3 {
-        color: white;
-        font-size: 1.5em;
-        font-family: AlteHaasGroteskBold;
-    }
-    h2 {
-        color: white;
-        font-size: 1.5em;
-        font-family: AlteHaasGroteskBold;
-    }
-    .container {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        margin: auto;
-        overflow-y: hidden;
-        overflow-y: hidden;
-    }
-    .opacity {
-        content: "";
-        width: 110%;
-        height: 100%;
-        position: fixed;
-        background-color: black;
-        background-size: 100%;
-        opacity: 30%;
-        overflow-y: hidden;
-        overflow-y: hidden;
-        margin-right: 0px;
-        top: 0px;
-        left: 0px;
-    }
-    .opacity2 {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-color: black;
-        opacity: 30%;
-    }
-
-    /* Menu */
-    .menu {
-        width: 100%;
-        position: fixed;
-        top: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        left: 0px;
-    }
-    .menu2 {
-        width: 100%;
-        height: fit-content;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        left: 0px;
-    }
-    #sp {
-        margin-top: 80px;
-    }
-    .title {
-        position: absolute;
-        width: 100%;
-        font-family: 'Karla', 'Merriweather', serif;
-        font-size: 1.3em;
-        text-decoration: none;
-        color: #E8302A;
-        font-weight: bold;
-        margin: auto;
-        text-align: center;
-    }
-    .menu_tab {
-        text-decoration: none;
-        font-size: 32px;
-        font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
-        margin: auto;
-        color: #E8302A;
-        font-weight: bold;
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        text-align: center;
-        height: fit-content;
-    }
-    .menu input:checked ~ .menu_tab { display: block; }
-    .menu input:checked ~ .menu_tab { height: 100%; background-color: aqua; }
-    .menu_tab_home {
-        text-decoration: none;
-        padding-top: 40px;
-        font-size: 32px;
-        font-family: 'Reenie Beanie', 'HeyTinyBold', 'Karla', sans-serif;
-        margin: auto;
-        color: #E8302A;
-        font-weight: bold;
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        text-align: center;
-        height: fit-content;
-    }
-    .menu_tab_home {display: none;}
-    .menu input:checked ~ .menu_tab_home { display: block; }
-    .menu2 input:checked ~ .menu_tab_home { display: block; }
-    .menu_tab:hover {
-        margin: auto;
-        color: black;
-    }
-    .menu_tab_home:hover {
-        margin: auto;
-        color: white;
-    }
-    .check {
-        display: none;
-    }
+    h2, h3 { font-size: 1.5em; }
+    .title { font-size: 1.3em; }
+    .container { overflow-y: hidden; }
     .checker {
         width: 30px;
         height: 30px;
-        position: absolute;
         right: 20px;
-        margin-top: auto;
-        margin-bottom: auto;
-        background-position: left center;
         background-size: 30px 30px;
-        background-repeat: no-repeat;
     }
-    .barras {
-        width: 30px;
-        height: 30px;
+    .barras { width: 30px; height: 30px; }
+    .vida { margin-right: 20px; }
+    .credits_txt { font-size: 0.5em; }
+    .bottom { padding-bottom: 10px; }
+    .bottom2 { margin-top: 40px; }
+    .instagrambtn,
+    .twitterbtn,
+    .youtubebtn,
+    .spotifybtn,
+    .amazonbtn,
+    .applebtn {
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
     }
-
-    /* Bottom */
-    .bottom {
-        position: absolute;
-        bottom: 0px;
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        padding-bottom: 10px;
-    }
-    .bottom2 {
-        bottom: 0px;
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        padding-bottom: 15px;
-        margin-top: 40px;
-    }
-    .bottom3 {
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        margin-top: 40px;
-    }
-    .credits{
-        float: left;
-        margin-left: 20px;
-        height: fit-content;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .vida{
-        position: relative;
-        float: right;
-        height: 40px;
-        margin: auto;
-        margin-right: 20px;
-    }
-    .credits_txt {
-        margin: 0px;
-        font-size: 0.5em;
-        text-decoration: none;
-        font-family:'Karla', sans-serif;
-        color: white;
-        padding-right: 5px;
-    }
-    .copyright {
-        display: flex;
-    }
-
-    /* Social media */
     .socialmedia {
         position: absolute;
-        display: grid;
-        grid-template-columns: 42px 42px 42px 42px 42px 42px;
-        width: fit-content;
-        bottom: 0px;
-        left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
+        bottom: 0;
         margin-bottom: 70px;
+        grid-template-columns: 42px 42px 42px 42px 42px 42px;
     }
     .socialmedia2 {
-        display: grid;
         grid-template-columns: 50px 50px 50px 50px 50px 50px;
-        width: fit-content;
-        left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
         margin-top: 30px;
     }
     .socialmedia3 {
-        display: grid;
         grid-template-columns: 50px 50px 50px 50px 50px 50px;
-        width: fit-content;
-        left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
         margin-top: 100px;
-    }
-    .instagrambtn {
-        background: url("../res/instagram_green.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-        margin: auto;
-    }
-    .instagrambtn:hover{
-        background: url("../res/instagram_red.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-    }
-    .twitterbtn {
-        background: url("../res/twitter_green.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-        margin: auto;
-    }
-    .twitterbtn:hover{
-        background: url("../res/twitter_red.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-    }
-    .spotifybtn {
-        background: url("../res/spotify_green.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-        margin: auto;
-    }
-    .spotifybtn:hover{
-        background: url("../res/spotify_red.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-    }
-    .applebtn {
-        background: url("../res/apple_green.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-        margin: auto;
-    }
-    .applebtn:hover{
-        background: url("../res/apple_red.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-    }
-    .amazonbtn {
-        background: url("../res/prime_green.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-        margin: auto;
-    }
-    .amazonbtn:hover{
-        background: url("../res/prime_red.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-    }
-    .youtubebtn {
-        background: url("../res/youtube_green.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
-        margin: auto;
-    }
-    .youtubebtn:hover{
-        background: url("../res/youtube_red.png") no-repeat;
-        width: 35px;
-        height: 35px;
-        background-size: 35px 35px;
     }
 }
