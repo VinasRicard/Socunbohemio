@@ -1,0 +1,38 @@
+- generic [active]:
+  - generic:
+    - generic [ref=e2]:
+      - generic [ref=e3]:
+        - generic [ref=e4]:
+          - paragraph [ref=e5]: © Socunbohemio, 2026.
+          - paragraph [ref=e7]: Disseny i desenvolupament per Ricard Viñas
+        - img "Vida Records" [ref=e8]
+      - generic [ref=e9]:
+        - heading "Contacte" [level=2] [ref=e10]
+        - generic [ref=e11]:
+          - paragraph [ref=e12]: "Correu electrònic:"
+          - paragraph [ref=e13]: booking@vidarecords.org
+        - generic [ref=e14]:
+          - paragraph [ref=e15]: "Instagram:"
+          - paragraph [ref=e16]: "@socunbohemio"
+        - generic [ref=e17]:
+          - paragraph [ref=e18]: "Twitter:"
+          - paragraph [ref=e19]: "@socunbohemio"
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: "TikTok:"
+          - paragraph [ref=e22]: "@socunbohemio"
+      - generic [ref=e23]:
+        - link "Instagram" [ref=e24] [cursor=pointer]:
+          - /url: https://www.instagram.com/socunbohemio/
+        - link "Twitter" [ref=e25] [cursor=pointer]:
+          - /url: https://twitter.com/socunbohemio?lang=ca
+        - link "YouTube" [ref=e26] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCHTbZCyCvqPXYCTW_Ro0uBg
+        - link "Spotify" [ref=e27] [cursor=pointer]:
+          - /url: https://open.spotify.com/artist/3Zyph9kkkEfTKaMQrLotUV
+        - link "Amazon Music" [ref=e28] [cursor=pointer]:
+          - /url: https://music.amazon.es/artists/B07H45RSG3/socunbohemio?refMarker=null
+        - link "Apple Music" [ref=e29] [cursor=pointer]:
+          - /url: https://music.apple.com/es/artist/socunbohemio/1436806880
+    - navigation [ref=e30]:
+      - link "SOCUNBOHEMIO" [ref=e31] [cursor=pointer]:
+        - /url: ../index.html

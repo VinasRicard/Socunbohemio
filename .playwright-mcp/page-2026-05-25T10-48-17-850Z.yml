@@ -1,0 +1,48 @@
+- generic [active]:
+  - generic:
+    - generic:
+      - generic [ref=e2]:
+        - generic [ref=e3]:
+          - paragraph [ref=e4]: © Socunbohemio, 2026.
+          - paragraph [ref=e6]: Disseny i desenvolupament per Ricard Viñas
+        - img "Vida Records" [ref=e7]
+      - generic [ref=e8]:
+        - heading "Contacte" [level=2] [ref=e9]
+        - generic [ref=e10]:
+          - paragraph [ref=e11]: "Correu electrònic:"
+          - paragraph [ref=e12]: booking@vidarecords.org
+        - generic [ref=e13]:
+          - paragraph [ref=e14]: "Instagram:"
+          - paragraph [ref=e15]: "@socunbohemio"
+        - generic [ref=e16]:
+          - paragraph [ref=e17]: "Twitter:"
+          - paragraph [ref=e18]: "@socunbohemio"
+        - generic [ref=e19]:
+          - paragraph [ref=e20]: "TikTok:"
+          - paragraph [ref=e21]: "@socunbohemio"
+      - generic [ref=e22]:
+        - link "Instagram" [ref=e23] [cursor=pointer]:
+          - /url: https://www.instagram.com/socunbohemio/
+        - link "Twitter" [ref=e24] [cursor=pointer]:
+          - /url: https://twitter.com/socunbohemio?lang=ca
+        - link "YouTube" [ref=e25] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCHTbZCyCvqPXYCTW_Ro0uBg
+        - link "Spotify" [ref=e26] [cursor=pointer]:
+          - /url: https://open.spotify.com/artist/3Zyph9kkkEfTKaMQrLotUV
+        - link "Amazon Music" [ref=e27] [cursor=pointer]:
+          - /url: https://music.amazon.es/artists/B07H45RSG3/socunbohemio?refMarker=null
+        - link "Apple Music" [ref=e28] [cursor=pointer]:
+          - /url: https://music.apple.com/es/artist/socunbohemio/1436806880
+    - navigation [ref=e29]:
+      - link "SOCUNBOHEMIO" [ref=e30] [cursor=pointer]:
+        - /url: ../index.html
+      - link "Sobre el projecte" [ref=e31] [cursor=pointer]:
+        - /url: ../html/sobreelprojecte.html
+      - link "Concerts" [ref=e32] [cursor=pointer]:
+        - /url: ../html/concerts.html
+      - link "Botiga" [ref=e33] [cursor=pointer]:
+        - /url: ../html/botiga.html
+      - link "Lletres i acords" [ref=e34] [cursor=pointer]:
+        - /url: ../html/lletresiacords.html
+      - link "Contacte" [ref=e35] [cursor=pointer]:
+        - /url: ../html/contacte.html
