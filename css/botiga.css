@@ -5,10 +5,13 @@
 
 
 #botiga {
-    background-image: url('../res/dibujo2.jpg');
+    background-image: url('../res/dibujo2.webp');
     overflow-x: hidden;
     overflow-y: hidden;
     background-position: top;
+}
+@media screen and (max-width: 60rem) {
+    #botiga { background-image: url('../res/dibujo2-sm.webp'); }
 }
 .botigacontainer {
     display: flex;

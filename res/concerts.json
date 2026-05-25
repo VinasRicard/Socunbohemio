@@ -1,0 +1,11 @@
+{
+  "concerts": [
+    {
+      "name": "CONCERT PRESENTACIÓ (SALA APOLO)",
+      "date": "25/02/27",
+      "link": "https://www.ticketmaster.es/event/1389615788?subchannel_id=11938&brand=es_vidafest",
+      "ubi": "Barcelona",
+      "sold": false
+    }
+  ]
+}
