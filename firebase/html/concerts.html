@@ -40,7 +40,7 @@
                 <div class="blockConcerts" style="margin-bottom: 55%;">
                     <div v-for="concert in concerts">
                         <div class="concert2">
-                            <p class="concert_date">{{ concert.date }}</p>
+                            <p class="concert_date"><s v-if="concert.oldDate" style="opacity: 0.5;">{{ concert.oldDate }}</s> {{ concert.date }}</p>
                             <div class="concert_info">
                                 <p class="concert_txt">{{ concert.name }} /</p><p class="concert_place">{{ concert.ubi }}</p>
                             </div>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="bottom">
                     <div class="credits">
-                        <p class="credits_txt">© Socunbohemio, 2023.</p>
+                        <p class="credits_txt">© Socunbohemio, 2026.</p>
                         <div class="copyright"><p class="credits_txt">Disseny i desenvolupament per Ricard Viñas</p></div>
                     </div>
                     <img src="../res/Vida_Records_Black_Gold.png" class="vida">
@@ -84,7 +84,7 @@
                 <div class="blockConcerts" style="margin-bottom: 55%;">
                     <div v-for="concert in concerts">
                         <div class="concert2">
-                            <p class="concert_date">{{ concert.date }}</p>
+                            <p class="concert_date"><s v-if="concert.oldDate" style="opacity: 0.5;">{{ concert.oldDate }}</s> {{ concert.date }}</p>
                             <div class="concert_info">
                                 <p class="concert_txt">{{ concert.name }}</p><p class="concert_place">{{ concert.ubi}}</p>
                             </div>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="bottom">
                     <div class="credits">
-                        <p class="credits_txt">© Socunbohemio, 2023.</p>
+                        <p class="credits_txt">© Socunbohemio, 2026.</p>
                         <div class="copyright"><p class="credits_txt">Disseny i desenvolupament per Ricard Viñas</p></div>
                     </div>
                     <img src="../res/Vida_Records_Black_Gold.png" class="vida">
@@ -126,12 +126,19 @@
                     // ]
                     concerts: [
                         {
+                            name: 'ESTRELLA DAMM 150 (LA DAURADA)',
+                            oldDate: '03/10/26',
+                            date: '11/10/26',
+                            link: 'https://www.estrelladamm.com/ca/socunbohemio',
+                            ubi: 'Vilanova i la Geltrú'
+                        },
+                        {
                             name: 'CONCERT PRESENTACIÓ (SALA APOLO)',
                             date: '25/02/27',
                             link: 'https://www.ticketmaster.es/event/1389615788?subchannel_id=11938&brand=es_vidafest',
                             ubi: 'Barcelona'
                         },
-                        
+
                     ]
                 }
             }
